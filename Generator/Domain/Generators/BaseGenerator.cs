@@ -19,24 +19,30 @@ namespace Domain.Generators
 
         public BaseGenerator(string path)
         {
-            pathForSave = path;
-            application = new Application();
+            pathForSave = path;        
         }
 
         public void ReadDocument() 
         {
-            document = application.Documents.Open(source);
+            application = new Application();
+            document = application.Documents.Add(source);
             document.Activate();
-
             bookmarks = new List<Bookmark>();
             foreach (Bookmark mark in document.Bookmarks)
             {
                 bookmarks.Add(mark);
             }
+            application.Visible = true;
         }
+
         public void CloseDocument()
         {
+            document.SaveAs2();
             document.Close();
+            document = null;
+            application.Quit();
+            document = null;
+
         }
     }
 }

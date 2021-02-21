@@ -18,7 +18,7 @@ namespace UI
         public Dodatoc4Form()
         {
             InitializeComponent();
-            _dodatoc4Generator = new Dodatoc4Generator("dotatoc4");
+            _dodatoc4Generator = new Dodatoc4Generator("dodatok4");
         }
 
         //save form to db
