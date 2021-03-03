@@ -11,8 +11,6 @@ namespace Domain.Generators
     {
         bool Validate(T model);
 
-        void Save(T model);
-
         void Generate(int id);
 
         void Generate(T model);

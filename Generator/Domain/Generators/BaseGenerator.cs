@@ -25,24 +25,23 @@ namespace Domain.Generators
         public void ReadDocument() 
         {
             application = new Application();
+            application.Visible = true;
+
             document = application.Documents.Add(source);
             document.Activate();
             bookmarks = new List<Bookmark>();
             foreach (Bookmark mark in document.Bookmarks)
             {
                 bookmarks.Add(mark);
-            }
-            application.Visible = true;
+            }        
         }
 
         public void CloseDocument()
         {
             document.SaveAs2();
             document.Close();
-            document = null;
             application.Quit();
             document = null;
-
         }
     }
 }

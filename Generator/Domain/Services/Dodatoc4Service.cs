@@ -2,6 +2,7 @@
 using Domain.Data.Entities;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,21 +36,25 @@ namespace Domain.Services
 
         public Dodatoc4 GetById(int id)
         {
-            return _reportContext.Dodatoc4s.Where(x => x.Id == id).First();
+            return _reportContext.Dodatoc4s.Where(x => x.Id == id).FirstOrDefault();
         }
 
         public void Insert(Dodatoc4 entity)
         {
-            _reportContext.Dodatoc4s.Add(entity);
-            _reportContext.SaveChanges();
+            using (ReportContext db = new ReportContext())
+            {
+                db.Dodatoc4s.Add(entity);
+                db.SaveChanges();
+            }
         }
 
         public void Update(Dodatoc4 entity)
         {
-            var dodatoc4 = _reportContext.Dodatoc4s.First(x => x.Id == entity.Id);
+            var dodatoc4 = _reportContext.Dodatoc4s.FirstOrDefault(x => x.Id == entity.Id);
             if (dodatoc4 != null)
             {
-                dodatoc4 = entity;
+                _reportContext.Entry(dodatoc4).CurrentValues.SetValues(entity);
+                _reportContext.Entry(dodatoc4).State = EntityState.Modified;
                 _reportContext.SaveChanges();
             }
         }

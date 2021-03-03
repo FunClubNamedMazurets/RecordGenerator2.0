@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Domain.Data.Entities
 {
-    public class Dodatoc4 : BaseEntity
+    public class Dodatoc4 : BaseEntity//, IBindingListView
     {
         // найменування органу управління освітою, куди направляється повідомлення,  його адреса
         public string NameOfOrganAndAddress { get; set; }
