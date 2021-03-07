@@ -29,5 +29,14 @@ namespace UI
             Dodatoc4Grid dodatoc4Grid = new Dodatoc4Grid();
             dodatoc4Grid.ShowDialog();
         }
+
+        //open new form for dodatoc1
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Dodatoc1Form dodatoc1Form = new Dodatoc1Form();
+            dodatoc1Form.ShowDialog();
+        }
+
+
     }
 }

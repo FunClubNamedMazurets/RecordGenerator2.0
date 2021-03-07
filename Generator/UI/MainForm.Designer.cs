@@ -47,7 +47,7 @@
             this.даніToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(674, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -65,13 +65,14 @@
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem2.Text = "1";
+            this.toolStripMenuItem2.Text = "Dodatoc1";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem3.Text = "2";
+            this.toolStripMenuItem3.Text = "Dodatoc2";
             // 
             // toolStripMenuItem4
             // 
@@ -93,19 +94,19 @@
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(125, 22);
             this.toolStripMenuItem5.Text = "1";
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(125, 22);
             this.toolStripMenuItem6.Text = "2";
             // 
             // dodatoc4ToolStripMenuItem
             // 
             this.dodatoc4ToolStripMenuItem.Name = "dodatoc4ToolStripMenuItem";
-            this.dodatoc4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dodatoc4ToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.dodatoc4ToolStripMenuItem.Text = "Dodatoc4";
             this.dodatoc4ToolStripMenuItem.Click += new System.EventHandler(this.dodatoc4ToolStripMenuItem_Click);
             // 
@@ -113,11 +114,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(674, 621);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Генератор шаблонів";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -60,6 +60,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dodatoc1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodatoc1Form.Designer.cs">
+      <DependentUpon>Dodatoc1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dodatoc2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodatoc2Form.Designer.cs">
+      <DependentUpon>Dodatoc2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dodatoc2Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodatoc2Grid.Designer.cs">
+      <DependentUpon>Dodatoc2Grid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dodatoc4Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +89,12 @@
     </Compile>
     <Compile Include="Dodatoc4Grid.Designer.cs">
       <DependentUpon>Dodatoc4Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dodatok1Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodatok1Grid.Designer.cs">
+      <DependentUpon>Dodatok1Grid.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -85,6 +109,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_generator_2DataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dodatoc1Form.resx">
+      <DependentUpon>Dodatoc1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodatoc2Form.resx">
+      <DependentUpon>Dodatoc2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodatoc2Grid.resx">
+      <DependentUpon>Dodatoc2Grid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dodatoc4Form.resx">
       <DependentUpon>Dodatoc4Form.cs</DependentUpon>
     </EmbeddedResource>
