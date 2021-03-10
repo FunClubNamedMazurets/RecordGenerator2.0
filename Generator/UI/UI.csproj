@@ -90,6 +90,18 @@
     <Compile Include="Dodatoc4Grid.Designer.cs">
       <DependentUpon>Dodatoc4Grid.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dodatoc5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodatoc5Form.Designer.cs">
+      <DependentUpon>Dodatoc5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dodatoc5Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodatoc5Grid.Designer.cs">
+      <DependentUpon>Dodatoc5Grid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dodatok1Grid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dodatoc4Grid.resx">
       <DependentUpon>Dodatoc4Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodatoc5Form.resx">
+      <DependentUpon>Dodatoc5Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

@@ -37,6 +37,7 @@
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.dodatoc4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dodatoc5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,8 @@
             this.шаблониToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2,
             this.toolStripMenuItem3,
-            this.toolStripMenuItem4});
+            this.toolStripMenuItem4,
+            this.dodatoc5ToolStripMenuItem});
             this.шаблониToolStripMenuItem.Name = "шаблониToolStripMenuItem";
             this.шаблониToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.шаблониToolStripMenuItem.Text = "Шаблони";
@@ -95,21 +97,28 @@
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(125, 22);
             this.toolStripMenuItem5.Text = "1";
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(125, 22);
             this.toolStripMenuItem6.Text = "2";
             // 
             // dodatoc4ToolStripMenuItem
             // 
             this.dodatoc4ToolStripMenuItem.Name = "dodatoc4ToolStripMenuItem";
-            this.dodatoc4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dodatoc4ToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.dodatoc4ToolStripMenuItem.Text = "Dodatoc4";
             this.dodatoc4ToolStripMenuItem.Click += new System.EventHandler(this.dodatoc4ToolStripMenuItem_Click);
+            // 
+            // dodatoc5ToolStripMenuItem
+            // 
+            this.dodatoc5ToolStripMenuItem.Name = "dodatoc5ToolStripMenuItem";
+            this.dodatoc5ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dodatoc5ToolStripMenuItem.Text = "Dodatoc5";
+            this.dodatoc5ToolStripMenuItem.Click += new System.EventHandler(this.dodatoc5ToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -139,6 +148,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem dodatoc4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dodatoc5ToolStripMenuItem;
     }
 }
 

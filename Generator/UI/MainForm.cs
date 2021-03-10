@@ -43,5 +43,12 @@ namespace UI
             Dodatoc2Form dodatoc2Form = new Dodatoc2Form();
             dodatoc2Form.ShowDialog();
         }
+
+        //open new form for dodatoc1
+        private void dodatoc5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Dodatoc5Form dodatoc5Form = new Dodatoc5Form();
+            dodatoc5Form.ShowDialog();
+        }
     }
 }
