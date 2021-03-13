@@ -37,18 +37,25 @@ namespace UI
             dodatoc1Form.ShowDialog();
         }
 
-        //open new form for dodatoc1
+        //open new form for dodatoc2
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             Dodatoc2Form dodatoc2Form = new Dodatoc2Form();
             dodatoc2Form.ShowDialog();
         }
 
-        //open new form for dodatoc1
+        //open new form for dodatoc5
         private void dodatoc5ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Dodatoc5Form dodatoc5Form = new Dodatoc5Form();
             dodatoc5Form.ShowDialog();
+        }
+
+        //open new form for forma7tnv
+        private void forma7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forma7Form forma7Form = new Forma7Form();
+            forma7Form.ShowDialog();
         }
     }
 }

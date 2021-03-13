@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    public partial class Dodatok1Grid : Form
+    public partial class Forma7Form : Form
     {
-        public Dodatok1Grid()
+        public Forma7Form()
         {
             InitializeComponent();
         }
