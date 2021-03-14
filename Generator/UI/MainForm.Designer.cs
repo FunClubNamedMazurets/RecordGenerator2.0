@@ -34,11 +34,13 @@
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.dodatoc5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.forma7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.forma7ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.formaN5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.даніToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.dodatoc4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.forma7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +62,9 @@
             this.toolStripMenuItem3,
             this.toolStripMenuItem4,
             this.dodatoc5ToolStripMenuItem,
-            this.forma7ToolStripMenuItem});
+            this.forma7ToolStripMenuItem,
+            this.forma7ToolStripMenuItem1,
+            this.formaN5ToolStripMenuItem});
             this.шаблониToolStripMenuItem.Name = "шаблониToolStripMenuItem";
             this.шаблониToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.шаблониToolStripMenuItem.Text = "Шаблони";
@@ -93,6 +97,27 @@
             this.dodatoc5ToolStripMenuItem.Text = "Dodatoc5";
             this.dodatoc5ToolStripMenuItem.Click += new System.EventHandler(this.dodatoc5ToolStripMenuItem_Click);
             // 
+            // forma7ToolStripMenuItem
+            // 
+            this.forma7ToolStripMenuItem.Name = "forma7ToolStripMenuItem";
+            this.forma7ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.forma7ToolStripMenuItem.Text = "Forma7 tnv";
+            this.forma7ToolStripMenuItem.Click += new System.EventHandler(this.forma7ToolStripMenuItem_Click);
+            // 
+            // forma7ToolStripMenuItem1
+            // 
+            this.forma7ToolStripMenuItem1.Name = "forma7ToolStripMenuItem1";
+            this.forma7ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.forma7ToolStripMenuItem1.Text = "Forma n1";
+            this.forma7ToolStripMenuItem1.Click += new System.EventHandler(this.forma7ToolStripMenuItem1_Click);
+            // 
+            // formaN5ToolStripMenuItem
+            // 
+            this.formaN5ToolStripMenuItem.Name = "formaN5ToolStripMenuItem";
+            this.formaN5ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formaN5ToolStripMenuItem.Text = "Forma n5";
+            this.formaN5ToolStripMenuItem.Click += new System.EventHandler(this.formaN5ToolStripMenuItem_Click);
+            // 
             // даніToolStripMenuItem
             // 
             this.даніToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -121,13 +146,6 @@
             this.dodatoc4ToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.dodatoc4ToolStripMenuItem.Text = "Dodatoc4";
             this.dodatoc4ToolStripMenuItem.Click += new System.EventHandler(this.dodatoc4ToolStripMenuItem_Click);
-            // 
-            // forma7ToolStripMenuItem
-            // 
-            this.forma7ToolStripMenuItem.Name = "forma7ToolStripMenuItem";
-            this.forma7ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.forma7ToolStripMenuItem.Text = "Forma7 tnv";
-            this.forma7ToolStripMenuItem.Click += new System.EventHandler(this.forma7ToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -159,6 +177,8 @@
         private System.Windows.Forms.ToolStripMenuItem dodatoc4ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dodatoc5ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem forma7ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem forma7ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem formaN5ToolStripMenuItem;
     }
 }
 

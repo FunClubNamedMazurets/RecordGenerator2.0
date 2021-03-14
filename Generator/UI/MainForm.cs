@@ -57,5 +57,19 @@ namespace UI
             Forma7Form forma7Form = new Forma7Form();
             forma7Form.ShowDialog();
         }
+
+        //open new form for formaN1
+        private void forma7ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormaN1Form formaN1Form = new FormaN1Form();
+            formaN1Form.ShowDialog();
+        }
+
+        //open new form for formaN5
+        private void formaN5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //FormaN5Form formaN5Form = new FormaN5Form();
+            //forma7Form.ShowDialog();
+        }
     }
 }

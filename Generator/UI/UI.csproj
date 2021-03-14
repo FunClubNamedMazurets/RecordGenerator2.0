@@ -120,6 +120,18 @@
     <Compile Include="Forma7Grid.Designer.cs">
       <DependentUpon>Forma7Grid.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaN1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaN1Form.Designer.cs">
+      <DependentUpon>FormaN1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaN1Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaN1Grid.Designer.cs">
+      <DependentUpon>FormaN1Grid.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forma7Form.resx">
       <DependentUpon>Forma7Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaN1Form.resx">
+      <DependentUpon>FormaN1Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
