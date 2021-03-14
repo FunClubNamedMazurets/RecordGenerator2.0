@@ -28,33 +28,7 @@ namespace Domain.Generators
         public void Generate(Dodatoc4 model)
         {
             ReadDocument();
-            //logic of insert
-            range = bookmarks[0].Range;
-            range.Text = model.DateAndSurname;
-
-            range = bookmarks[1].Range;
-            range.Text = model.DateAndTime;
-
-            range = bookmarks[2].Range;
-            range.Text = model.NameOfOrganAndAddress;
-
-            range = bookmarks[3].Range;
-            range.Text = model.NameOfOrganAndOwner;
-
-            range = bookmarks[4].Range;
-            range.Text = model.Place;
-    
-            range = bookmarks[5].Range;
-            range.Text = model.Initials;
-
-            range = bookmarks[6].Range;
-            range.Text = model.CausesAccident;
-
-            range = bookmarks[7].Range;
-            range.Text = model.TypeInjuries;
-
-
-
+            SetInputs(model);
             // CloseDocument();
         }
 

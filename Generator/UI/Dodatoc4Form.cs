@@ -26,7 +26,7 @@ namespace UI
 
         private void Dodatoc4Form_Load(object sender, EventArgs e)
         {
-            LoadComboBox();
+            //LoadComboBox();
         }
 
         //save form to db
@@ -38,12 +38,12 @@ namespace UI
             {
                 _dodatoc4Service.Insert(dodatoc4Model);
                 label1.Text = dodatoc4Model?.Id.ToString();
-                LoadComboBox(selectedCurrent: true);                                             
+                //LoadComboBox(selectedCurrent: true);                                             
             }
             else 
             { 
                 _dodatoc4Service.Update(dodatoc4Model);             
-                LoadComboBox(selectedLast: true);              
+                //LoadComboBox(selectedLast: true);              
             }
         }
 
@@ -61,20 +61,20 @@ namespace UI
             var dodatoc4 = _dodatoc4Service.GetById(item.Key);
 
             label1.Text = dodatoc4?.Id.ToString();
-            textBox3.Text = dodatoc4?.NameOfOrganAndAddress;
-            textBox4.Text = dodatoc4?.DateAndTime;
-            textBox5.Text = dodatoc4?.NameOfOrganAndOwner;
-            richTextBox1.Text = dodatoc4?.Place;
-            textBox6.Text = dodatoc4?.Initials;
-            richTextBox2.Text = dodatoc4?.TypeInjuries;
-            richTextBox3.Text = dodatoc4?.CausesAccident;
-            textBox7.Text = dodatoc4?.DateAndSurname;
+            textBox3.Text = dodatoc4?.Input_1_Education_Management;
+            textBox4.Text = dodatoc4?.Input_2_Date_Of_Accident;
+            textBox5.Text = dodatoc4?.Input_3_Name_Of_School_And_Creator;
+            richTextBox1.Text = dodatoc4?.Input_4_Place_Of_Accident;
+            textBox6.Text = dodatoc4?.Input_5_Poor_Ones;
+            richTextBox2.Text = dodatoc4?.Input_6_Trauma;
+            richTextBox3.Text = dodatoc4?.Input_7_Reasons_Of_Accident;
+            textBox7.Text = dodatoc4?.Input_8_Date_And_Surname;
         }
 
         private void LoadComboBox(bool selectedLast = false, bool selectedCurrent = false) 
         {
             var temp = comboBox1?.SelectedIndex;
-            var source = _dodatoc4Service.GetAll().Select(x => new { Key = x.Id, Value = x.Id.ToString() + "; " + x.NameOfOrganAndAddress + "; " + x.DateAndTime }).ToList();
+            var source = _dodatoc4Service.GetAll().Select(x => new { Key = x.Id, Value = x.Id.ToString() + "; " + x.Input_1_Education_Management + "; " + x.Input_2_Date_Of_Accident }).ToList();
 
             SortedDictionary<int, string> dictionarySource = new SortedDictionary<int, string>();
             dictionarySource.Add(0, "Add new");
@@ -103,14 +103,14 @@ namespace UI
             return new Dodatoc4()
             {
                 //Id = Convert.ToInt32(label1.Text),
-                NameOfOrganAndAddress = textBox3.Text,
-                DateAndTime = textBox4.Text,
-                NameOfOrganAndOwner = textBox5.Text,
-                Place = richTextBox1.Text,
-                Initials = textBox6.Text,
-                TypeInjuries = richTextBox2.Text,
-                CausesAccident = richTextBox3.Text,
-                DateAndSurname = textBox7.Text
+                Input_1_Education_Management = textBox3.Text,
+                Input_2_Date_Of_Accident = textBox4.Text,
+                Input_3_Name_Of_School_And_Creator = textBox5.Text,
+                Input_4_Place_Of_Accident = richTextBox1.Text,
+                Input_5_Poor_Ones = textBox6.Text,
+                Input_6_Trauma = richTextBox2.Text,
+                Input_7_Reasons_Of_Accident = richTextBox3.Text,
+                Input_8_Date_And_Surname = textBox7.Text
             };
         }
     }

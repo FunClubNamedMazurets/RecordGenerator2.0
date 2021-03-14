@@ -1,4 +1,5 @@
-﻿using Microsoft.Office.Interop.Word;
+﻿using Domain.Data.Entities;
+using Microsoft.Office.Interop.Word;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +34,24 @@ namespace Domain.Generators
             foreach (Bookmark mark in document.Bookmarks)
             {
                 bookmarks.Add(mark);
-            }        
+            }
+        }
+
+        public void SetInputs(BaseEntity model) 
+        {
+            Type type = model.GetType();
+            int i = 0;
+
+            foreach (var property in type.GetProperties().OrderBy(x => x.Name))
+            {
+                if (property.Name != nameof(BaseEntity.Id))
+                {
+                    range = bookmarks[i].Range;
+                    range.Text = property.GetValue(model).ToString();
+
+                    i++;
+                }
+            }
         }
 
         public void CloseDocument()
@@ -42,6 +60,7 @@ namespace Domain.Generators
             document.Close();
             application.Quit();
             document = null;
+            application = null;
         }
     }
 }

@@ -28,10 +28,27 @@
                     })
                 .PrimaryKey(t => t.Id);
             
+            CreateTable(
+                "dbo.Dodatoc4",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Input_1_Education_Management = c.String(),
+                        Input_2_Date_Of_Accident = c.String(),
+                        Input_3_Name_Of_School_And_Creator = c.String(),
+                        Input_4_Place_Of_Accident = c.String(),
+                        Input_5_Poor_Ones = c.String(),
+                        Input_6_Trauma = c.String(),
+                        Input_7_Reasons_Of_Accident = c.String(),
+                        Input_8_Date_And_Surname = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
         {
+            DropTable("dbo.Dodatoc4");
             DropTable("dbo.Dodatoc2");
         }
     }
