@@ -72,6 +72,20 @@ namespace UI
             formaN5Form.ShowDialog();
         }
 
+        private void formaNpvToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormaNpvForm formaNpvForm = new FormaNpvForm();
+            formaNpvForm.ShowDialog();
+        }
 
+        private void formaNtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formaZvtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
