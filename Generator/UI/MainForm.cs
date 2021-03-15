@@ -80,7 +80,8 @@ namespace UI
 
         private void formaNtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormaNpvForm formaNpvForm = new FormaNpvForm();
+            formaNpvForm.ShowDialog();
         }
 
         private void formaZvtToolStripMenuItem_Click(object sender, EventArgs e)
