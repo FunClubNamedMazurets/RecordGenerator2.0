@@ -59,7 +59,6 @@
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
@@ -80,6 +79,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -198,51 +198,51 @@
             // 
             // textBox31
             // 
-            this.textBox31.Location = new System.Drawing.Point(389, 1680);
+            this.textBox31.Location = new System.Drawing.Point(388, 1681);
             this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(166, 20);
+            this.textBox31.Size = new System.Drawing.Size(168, 20);
             this.textBox31.TabIndex = 36;
             // 
             // textBox30
             // 
             this.textBox30.Location = new System.Drawing.Point(116, 1681);
             this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(268, 20);
+            this.textBox30.Size = new System.Drawing.Size(269, 20);
             this.textBox30.TabIndex = 35;
             // 
             // textBox29
             // 
-            this.textBox29.Location = new System.Drawing.Point(390, 1647);
+            this.textBox29.Location = new System.Drawing.Point(388, 1649);
             this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(165, 20);
+            this.textBox29.Size = new System.Drawing.Size(168, 20);
             this.textBox29.TabIndex = 34;
             // 
             // textBox28
             // 
             this.textBox28.Location = new System.Drawing.Point(117, 1649);
             this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(267, 20);
+            this.textBox28.Size = new System.Drawing.Size(268, 20);
             this.textBox28.TabIndex = 33;
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(392, 1615);
+            this.textBox27.Location = new System.Drawing.Point(391, 1616);
             this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(166, 20);
+            this.textBox27.Size = new System.Drawing.Size(167, 20);
             this.textBox27.TabIndex = 32;
             // 
             // textBox26
             // 
             this.textBox26.Location = new System.Drawing.Point(118, 1616);
             this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(268, 20);
+            this.textBox26.Size = new System.Drawing.Size(269, 20);
             this.textBox26.TabIndex = 31;
             // 
             // textBox25
             // 
-            this.textBox25.Location = new System.Drawing.Point(393, 1584);
+            this.textBox25.Location = new System.Drawing.Point(392, 1584);
             this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(166, 20);
+            this.textBox25.Size = new System.Drawing.Size(167, 20);
             this.textBox25.TabIndex = 30;
             // 
             // textBox24
@@ -340,14 +340,6 @@
             this.textBox17.Size = new System.Drawing.Size(283, 20);
             this.textBox17.TabIndex = 21;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(27, 824);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(580, 80);
-            this.richTextBox1.TabIndex = 20;
-            this.richTextBox1.Text = "";
-            // 
             // textBox16
             // 
             this.textBox16.Location = new System.Drawing.Point(244, 729);
@@ -427,9 +419,9 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(592, 174);
+            this.textBox5.Location = new System.Drawing.Point(591, 174);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(15, 20);
+            this.textBox5.Size = new System.Drawing.Size(16, 20);
             this.textBox5.TabIndex = 8;
             // 
             // textBox4
@@ -495,6 +487,14 @@
             this.comboBox1.Size = new System.Drawing.Size(631, 21);
             this.comboBox1.TabIndex = 0;
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(27, 824);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(580, 80);
+            this.richTextBox1.TabIndex = 20;
+            this.richTextBox1.Text = "";
+            // 
             // Dodatoc1Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -551,7 +551,6 @@
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox14;
@@ -569,5 +568,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

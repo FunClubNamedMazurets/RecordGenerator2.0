@@ -132,6 +132,54 @@
     <Compile Include="FormaN1Grid.Designer.cs">
       <DependentUpon>FormaN1Grid.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaN5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaN5Form.Designer.cs">
+      <DependentUpon>FormaN5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaN5Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaN5Grid.Designer.cs">
+      <DependentUpon>FormaN5Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaNpvForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaNpvForm.Designer.cs">
+      <DependentUpon>FormaNpvForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaNpvGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaNpvGrid.Designer.cs">
+      <DependentUpon>FormaNpvGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaNtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaNtForm.Designer.cs">
+      <DependentUpon>FormaNtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaNtGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaNtGrid.Designer.cs">
+      <DependentUpon>FormaNtGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaZvtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZvtForm.Designer.cs">
+      <DependentUpon>FormaZvtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaZvtGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZvtGrid.Designer.cs">
+      <DependentUpon>FormaZvtGrid.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +216,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaN1Form.resx">
       <DependentUpon>FormaN1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaN5Form.resx">
+      <DependentUpon>FormaN5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaNpvForm.resx">
+      <DependentUpon>FormaNpvForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaNtForm.resx">
+      <DependentUpon>FormaNtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZvtForm.resx">
+      <DependentUpon>FormaZvtForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

@@ -68,8 +68,29 @@ namespace UI
         //open new form for formaN5
         private void formaN5ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //FormaN5Form formaN5Form = new FormaN5Form();
-            //forma7Form.ShowDialog();
+            FormaN5Form formaN5Form = new FormaN5Form();
+            formaN5Form.ShowDialog();
+        }
+
+        //open new form for formaNpv
+        private void formaNpvToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormaNpvForm formaNpvForm = new FormaNpvForm();
+            formaNpvForm.ShowDialog();
+        }
+
+        //open new form for formaNt
+        private void formaNtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormaNtForm formaNtForm = new FormaNtForm();
+            formaNtForm.ShowDialog();
+        }
+
+        //open new form for formaZvt
+        private void formaZvtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormaZvtForm formaZvtForm = new FormaZvtForm();
+            formaZvtForm.ShowDialog();
         }
     }
 }
