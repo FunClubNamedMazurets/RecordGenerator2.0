@@ -168,6 +168,18 @@
     <Compile Include="FormaNtGrid.Designer.cs">
       <DependentUpon>FormaNtGrid.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaZvtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZvtForm.Designer.cs">
+      <DependentUpon>FormaZvtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaZvtGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZvtGrid.Designer.cs">
+      <DependentUpon>FormaZvtGrid.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaNtForm.resx">
       <DependentUpon>FormaNtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZvtForm.resx">
+      <DependentUpon>FormaZvtForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

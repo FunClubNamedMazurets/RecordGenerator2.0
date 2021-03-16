@@ -79,16 +79,18 @@ namespace UI
             formaNpvForm.ShowDialog();
         }
 
-        //open new form for formaN5
+        //open new form for formaNt
         private void formaNtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormaNtForm formaNtForm = new FormaNtForm();
             formaNtForm.ShowDialog();
         }
 
+        //open new form for formaZvt
         private void formaZvtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormaZvtForm formaZvtForm = new FormaZvtForm();
+            formaZvtForm.ShowDialog();
         }
     }
 }
