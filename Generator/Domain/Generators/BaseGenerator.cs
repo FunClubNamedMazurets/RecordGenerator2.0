@@ -23,7 +23,7 @@ namespace Domain.Generators
             pathForSave = path;        
         }
 
-        public void ReadDocument() 
+        public void ReadDocument()
         {
             application = new Application();
             application.Visible = true;
@@ -36,22 +36,35 @@ namespace Domain.Generators
                 bookmarks.Add(mark);
             }
         }
-
+        
         public void SetInputs(BaseEntity model) 
         {
             Type type = model.GetType();
-            int i = 0;
+            //int i = 0;
 
             foreach (var property in type.GetProperties().OrderBy(x => x.Name))
             {
                 if (property.Name != nameof(BaseEntity.Id))
                 {
-                    range = bookmarks[i].Range;
-                    range.Text = property.GetValue(model).ToString();
+                    object bkmC = property.Name;
+                    Bookmark bookmark = document.Bookmarks.get_Item(ref bkmC);
 
-                    i++;
+                    range = bookmark.Range;
+                    range.Text = property.GetValue(model).ToString();
                 }
             }
+
+
+            //foreach (var property in type.GetProperties().OrderBy(x => x.Name))
+            //{
+            //    if (property.Name != nameof(BaseEntity.Id))
+            //    {
+            //        range = bookmarks[i].Range;
+            //        range.Text = property.GetValue(model).ToString();
+
+            //        i++;
+            //    }
+            //}
         }
 
         public void CloseDocument()
