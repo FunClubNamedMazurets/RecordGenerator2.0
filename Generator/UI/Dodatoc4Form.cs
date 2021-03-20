@@ -7,9 +7,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UI.Helpers;
 
 namespace UI
 {
@@ -20,7 +22,7 @@ namespace UI
         public Dodatoc4Form()
         {
             InitializeComponent();
-            _dodatoc4Generator = new Dodatoc4Generator("dodatok4");
+            _dodatoc4Generator = new Dodatoc4Generator();
             _dodatoc4Service = new Dodatoc4Service();
         }
 
@@ -34,10 +36,10 @@ namespace UI
         {
             var dodatoc4Model = PrepareModel();
 
-            if (string.IsNullOrEmpty(label1.Text) || label1.Text == "0")
+            if (string.IsNullOrEmpty(Id.Text) || Id.Text == "0")
             {
                 _dodatoc4Service.Insert(dodatoc4Model);
-                label1.Text = dodatoc4Model?.Id.ToString();
+                Id.Text = dodatoc4Model?.Id.ToString();
                 //LoadComboBox(selectedCurrent: true);                                             
             }
             else 
@@ -51,30 +53,28 @@ namespace UI
         private void button1_Click(object sender, EventArgs e)
         {             
             var dodatoc4Model = PrepareModel();
-
             _dodatoc4Generator.Generate(dodatoc4Model);
         }    
       
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var item = (KeyValuePair<int, string>)comboBox1.SelectedItem;
-            var dodatoc4 = _dodatoc4Service.GetById(item.Key);
+            //var item = (KeyValuePair<int, string>)comboBox1.SelectedItem;
+            //var dodatoc4 = _dodatoc4Service.GetById(item.Key);
 
-            label1.Text = dodatoc4?.Id.ToString();
-            textBox3.Text = dodatoc4?.Input_1_Education_Management;
-            textBox4.Text = dodatoc4?.Input_2_Date_Of_Accident;
-            textBox5.Text = dodatoc4?.Input_3_Name_Of_School_And_Creator;
-            richTextBox1.Text = dodatoc4?.Input_4_Place_Of_Accident;
-            textBox6.Text = dodatoc4?.Input_5_Poor_Ones;
-            richTextBox2.Text = dodatoc4?.Input_6_Trauma;
-            richTextBox3.Text = dodatoc4?.Input_7_Reasons_Of_Accident;
-            textBox7.Text = dodatoc4?.Input_8_Date_And_Surname;
+            //Type type = dodatoc4.GetType();
+
+            //foreach (var property in type.GetProperties().OrderBy(x => x.Name))
+            //{              
+            //    PropertyInfo piShared = type.GetProperty(property.Name);
+            //    var control = this.Controls.Find(property.Name, true).FirstOrDefault();
+            //    control.Text = property.GetValue(dodatoc4).ToString();
+            //}
         }
 
         private void LoadComboBox(bool selectedLast = false, bool selectedCurrent = false) 
         {
             var temp = comboBox1?.SelectedIndex;
-            var source = _dodatoc4Service.GetAll().Select(x => new { Key = x.Id, Value = x.Id.ToString() + "; " + x.Input_1_Education_Management + "; " + x.Input_2_Date_Of_Accident }).ToList();
+            var source = _dodatoc4Service.GetAll().Select(x => new { Key = x.Id, Value = x.Id.ToString() + "; " + x.Input_1_орган_управління_освітою + "; " + x.Input_2_дата_час_нещасності }).ToList();
 
             SortedDictionary<int, string> dictionarySource = new SortedDictionary<int, string>();
             dictionarySource.Add(0, "Add new");
@@ -98,20 +98,13 @@ namespace UI
                 comboBox1.SelectedIndex = (int)temp;
             }               
         }
+
         private Dodatoc4 PrepareModel()
         {
-            return new Dodatoc4()
-            {
-                //Id = Convert.ToInt32(label1.Text),
-                Input_1_Education_Management = textBox3.Text,
-                Input_2_Date_Of_Accident = textBox4.Text,
-                Input_3_Name_Of_School_And_Creator = textBox5.Text,
-                Input_4_Place_Of_Accident = richTextBox1.Text,
-                Input_5_Poor_Ones = textBox6.Text,
-                Input_6_Trauma = richTextBox2.Text,
-                Input_7_Reasons_Of_Accident = richTextBox3.Text,
-                Input_8_Date_And_Surname = textBox7.Text
-            };
+            var model = new Dodatoc4();
+            FormHelper.InputsToModel(this, model);
+
+            return model;
         }
     }
 }

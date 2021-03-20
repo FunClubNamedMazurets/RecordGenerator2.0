@@ -1,4 +1,5 @@
 ﻿using Domain.Data.Entities;
+using Domain.Helpers;
 using Microsoft.Office.Interop.Word;
 using System;
 using System.Collections.Generic;
@@ -9,18 +10,18 @@ using System.Threading.Tasks;
 namespace Domain.Generators
 {
     public abstract class BaseGenerator
-    {
-        protected static string source;        
+    {    
         protected Document document;
         protected Application application;
         protected Range range;
         protected IList<Bookmark> bookmarks;
+        protected bool _hasGrid;
 
-        protected string pathForSave { get; set; }
+        protected string FilePath { get; set; }
 
-        public BaseGenerator(string path)
+        public BaseGenerator(bool hasGrid = false)
         {
-            pathForSave = path;        
+            _hasGrid = hasGrid;
         }
 
         public void ReadDocument()
@@ -28,8 +29,9 @@ namespace Domain.Generators
             application = new Application();
             application.Visible = true;
 
-            document = application.Documents.Add(source);
+            document = application.Documents.Add(FilePath);
             document.Activate();
+
             bookmarks = new List<Bookmark>();
             foreach (Bookmark mark in document.Bookmarks)
             {
@@ -44,7 +46,7 @@ namespace Domain.Generators
 
             foreach (var property in type.GetProperties().OrderBy(x => x.Name))
             {
-                if (property.Name != nameof(BaseEntity.Id))
+                if (property.Name != nameof(BaseEntity.Id) && property.PropertyType != typeof(DynamicTable))
                 {
                     object bkmC = property.Name;
                     Bookmark bookmark = document.Bookmarks.get_Item(ref bkmC);
@@ -52,19 +54,35 @@ namespace Domain.Generators
                     range = bookmark.Range;
                     range.Text = property.GetValue(model).ToString();
                 }
+                else if (property.PropertyType == typeof(DynamicTable))
+                {
+                    if (_hasGrid)
+                    {
+                        var dynamicTable = (DynamicTable)property.GetValue(model);
+
+                        for (int i = 0; i < dynamicTable.RowsCount-1; i++)
+                        {
+                            document.Tables[3].Rows.Add();
+                        }
+
+                        int n = 0, m = 0;
+                        foreach (Row row in document.Tables[3].Rows)
+                        {
+                            if (row.Index != 1)
+                            {
+                                m = 0;
+                                foreach (Cell cell in row.Cells)
+                                {
+                                    if (dynamicTable.Data[n, m] != null)
+                                        cell.Range.Text = dynamicTable.Data[n, m].ToString();
+                                    m++;
+                                }
+                                n++;
+                            }
+                        }                      
+                    }
+                }
             }
-
-
-            //foreach (var property in type.GetProperties().OrderBy(x => x.Name))
-            //{
-            //    if (property.Name != nameof(BaseEntity.Id))
-            //    {
-            //        range = bookmarks[i].Range;
-            //        range.Text = property.GetValue(model).ToString();
-
-            //        i++;
-            //    }
-            //}
         }
 
         public void CloseDocument()

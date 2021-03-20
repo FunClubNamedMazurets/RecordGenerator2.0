@@ -12,39 +12,16 @@ namespace Domain.Generators
 {
     public class Dodatoc4Generator : BaseGenerator, IGenerator<Dodatoc4>
     {      
-        private Dodatoc4Service _dodatoc4Service;
-
-        public Dodatoc4Generator(string path) : base(path)
+        public Dodatoc4Generator(bool hasGrid = false) : base(hasGrid)
         {
-            _dodatoc4Service = new Dodatoc4Service();
-            source = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\"+ path +".dotx";
-        }
-
-        public void Generate(int id)
-        {
-            throw new NotImplementedException();
+            FilePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\Dodatok-4.dotx";
         }
 
         public void Generate(Dodatoc4 model)
         {
+            // to do; add check on model props not null
             ReadDocument();
             SetInputs(model);
-            // CloseDocument();
-        }
-
-        public void Save(Dodatoc4 model)
-        {
-            _dodatoc4Service.Insert(model);
-        }
-
-        public bool Validate(Dodatoc4 model)
-        {
-            if (model == null)
-            {
-                return false;
-            }
-
-            return true;
         }
     }
 }

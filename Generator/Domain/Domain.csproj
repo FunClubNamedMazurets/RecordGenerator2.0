@@ -79,35 +79,58 @@
   <ItemGroup>
     <Compile Include="Data\Contexts\ReportContext.cs" />
     <Compile Include="Data\Entities\BaseEntity.cs" />
+    <Compile Include="Data\Entities\Dodatoc1.cs" />
     <Compile Include="Data\Entities\Dodatoc2.cs" />
     <Compile Include="Data\Entities\Dodatoc4.cs" />
+    <Compile Include="Data\Entities\Dodatoc5.cs" />
+    <Compile Include="Data\Entities\Forma7.cs" />
+    <Compile Include="Data\Entities\FormaN1.cs" />
+    <Compile Include="Data\Entities\FormaN5.cs" />
+    <Compile Include="Data\Entities\FormaNpv.cs" />
+    <Compile Include="Data\Entities\FormaNt.cs" />
+    <Compile Include="Data\Entities\FormaZvt.cs" />
     <Compile Include="Generators\BaseGenerator.cs" />
+    <Compile Include="Generators\Dodatoc1Generator.cs" />
     <Compile Include="Generators\Dodatoc2Generator.cs" />
     <Compile Include="Generators\Dodatoc4Generator.cs" />
+    <Compile Include="Generators\Dodatoc5Generator.cs" />
+    <Compile Include="Generators\Forma7Generator.cs" />
+    <Compile Include="Generators\FormaN1Generator.cs" />
+    <Compile Include="Generators\FormaN5Generator.cs" />
+    <Compile Include="Generators\FormaNpvGenerator.cs" />
+    <Compile Include="Generators\FormaNtGenerator.cs" />
+    <Compile Include="Generators\FormaZvtGenerator.cs" />
     <Compile Include="Generators\IGenerator.cs" />
-    <Compile Include="Migrations\202103141339557_Initial.cs" />
-    <Compile Include="Migrations\202103141339557_Initial.designer.cs">
-      <DependentUpon>202103141339557_Initial.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Helpers\DynamicTable.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Dodatoc1Service.cs" />
     <Compile Include="Services\Dodatoc2Service.cs" />
     <Compile Include="Services\Dodatoc4Service.cs" />
+    <Compile Include="Services\Dodatoc5Service.cs" />
+    <Compile Include="Services\Forma7Service.cs" />
+    <Compile Include="Services\FormaN1Service.cs" />
+    <Compile Include="Services\FormaN5Service.cs" />
+    <Compile Include="Services\FormaNpvService.cs" />
+    <Compile Include="Services\FormaNtService.cs" />
+    <Compile Include="Services\FormaZvtService.cs" />
     <Compile Include="Services\IBaseService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="Templates\dodatok4.dotx" />
+    <None Include="Templates\dodatok-1.dotx" />
+    <None Include="Templates\dodatok-2.dotx" />
+    <None Include="Templates\dodatok-4.dotx" />
+    <None Include="Templates\dodatok-5.dotx" />
+    <None Include="Templates\forma-7-tnv.dotx" />
+    <None Include="Templates\forma-n-1.dotx" />
+    <None Include="Templates\forma-n-5.dotx" />
+    <None Include="Templates\forma-npv.dotx" />
+    <None Include="Templates\forma-nt.dotx" />
+    <None Include="Templates\forma-zvt-t-2-za-20.dotx" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Done\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202103141339557_Initial.resx">
-      <DependentUpon>202103141339557_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

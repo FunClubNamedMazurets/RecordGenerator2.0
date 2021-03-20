@@ -30,50 +30,52 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dodatoc2Form));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.DynamicTable1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Input_13_рік = new System.Windows.Forms.TextBox();
+            this.Input_12_місяць = new System.Windows.Forms.TextBox();
+            this.Input_11_число = new System.Windows.Forms.TextBox();
+            this.Input_10_ініціали_прізвище = new System.Windows.Forms.TextBox();
+            this.Input_9_керівник_закладу = new System.Windows.Forms.TextBox();
+            this.Input_8_рік = new System.Windows.Forms.TextBox();
+            this.Input_7_місяць = new System.Windows.Forms.TextBox();
+            this.Input_6_число = new System.Windows.Forms.TextBox();
+            this.Input_5_номер_акту_форми = new System.Windows.Forms.TextBox();
+            this.Input_4_клас_група = new System.Windows.Forms.TextBox();
+            this.Input_3_навчальний_заклад = new System.Windows.Forms.TextBox();
+            this.Input_2_п_і_б = new System.Windows.Forms.TextBox();
+            this.Input_1_орган_управління_освітою = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Id = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DynamicTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.Id);
+            this.panel1.Controls.Add(this.DynamicTable1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox13);
-            this.panel1.Controls.Add(this.textBox12);
-            this.panel1.Controls.Add(this.textBox11);
-            this.panel1.Controls.Add(this.textBox10);
-            this.panel1.Controls.Add(this.textBox9);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.Input_13_рік);
+            this.panel1.Controls.Add(this.Input_12_місяць);
+            this.panel1.Controls.Add(this.Input_11_число);
+            this.panel1.Controls.Add(this.Input_10_ініціали_прізвище);
+            this.panel1.Controls.Add(this.Input_9_керівник_закладу);
+            this.panel1.Controls.Add(this.Input_8_рік);
+            this.panel1.Controls.Add(this.Input_7_місяць);
+            this.panel1.Controls.Add(this.Input_6_число);
+            this.panel1.Controls.Add(this.Input_5_номер_акту_форми);
+            this.panel1.Controls.Add(this.Input_4_клас_група);
+            this.panel1.Controls.Add(this.Input_3_навчальний_заклад);
+            this.panel1.Controls.Add(this.Input_2_п_і_б);
+            this.panel1.Controls.Add(this.Input_1_орган_управління_освітою);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
@@ -81,17 +83,34 @@
             this.panel1.Size = new System.Drawing.Size(650, 664);
             this.panel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // DynamicTable1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DynamicTable1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DynamicTable1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(13, 413);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(613, 123);
-            this.dataGridView1.TabIndex = 17;
+            this.DynamicTable1.Location = new System.Drawing.Point(13, 413);
+            this.DynamicTable1.Name = "DynamicTable1";
+            this.DynamicTable1.Size = new System.Drawing.Size(613, 123);
+            this.DynamicTable1.TabIndex = 17;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Діагноз за довідкою лікувально- профілактичного закладу";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 280;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Звільнений від  навчання (відвідування) у         навчальному  закладі";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 180;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Число  днів невідвідування навчального закладу";
+            this.Column3.Name = "Column3";
             // 
             // button2
             // 
@@ -101,6 +120,7 @@
             this.button2.TabIndex = 16;
             this.button2.Text = "Зберегти";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -110,97 +130,98 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "Згенерувати";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox13
+            // Input_13_рік
             // 
-            this.textBox13.Location = new System.Drawing.Point(547, 574);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(31, 20);
-            this.textBox13.TabIndex = 14;
+            this.Input_13_рік.Location = new System.Drawing.Point(547, 574);
+            this.Input_13_рік.Name = "Input_13_рік";
+            this.Input_13_рік.Size = new System.Drawing.Size(31, 20);
+            this.Input_13_рік.TabIndex = 14;
             // 
-            // textBox12
+            // Input_12_місяць
             // 
-            this.textBox12.Location = new System.Drawing.Point(418, 574);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(114, 20);
-            this.textBox12.TabIndex = 13;
+            this.Input_12_місяць.Location = new System.Drawing.Point(418, 574);
+            this.Input_12_місяць.Name = "Input_12_місяць";
+            this.Input_12_місяць.Size = new System.Drawing.Size(114, 20);
+            this.Input_12_місяць.TabIndex = 13;
             // 
-            // textBox11
+            // Input_11_число
             // 
-            this.textBox11.Location = new System.Drawing.Point(366, 574);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(39, 20);
-            this.textBox11.TabIndex = 12;
+            this.Input_11_число.Location = new System.Drawing.Point(366, 574);
+            this.Input_11_число.Name = "Input_11_число";
+            this.Input_11_число.Size = new System.Drawing.Size(39, 20);
+            this.Input_11_число.TabIndex = 12;
             // 
-            // textBox10
+            // Input_10_ініціали_прізвище
             // 
-            this.textBox10.Location = new System.Drawing.Point(430, 542);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(175, 20);
-            this.textBox10.TabIndex = 11;
+            this.Input_10_ініціали_прізвище.Location = new System.Drawing.Point(430, 542);
+            this.Input_10_ініціали_прізвище.Name = "Input_10_ініціали_прізвище";
+            this.Input_10_ініціали_прізвище.Size = new System.Drawing.Size(175, 20);
+            this.Input_10_ініціали_прізвище.TabIndex = 11;
             // 
-            // textBox9
+            // Input_9_керівник_закладу
             // 
-            this.textBox9.Location = new System.Drawing.Point(221, 542);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(205, 20);
-            this.textBox9.TabIndex = 10;
+            this.Input_9_керівник_закладу.Location = new System.Drawing.Point(221, 542);
+            this.Input_9_керівник_закладу.Name = "Input_9_керівник_закладу";
+            this.Input_9_керівник_закладу.Size = new System.Drawing.Size(205, 20);
+            this.Input_9_керівник_закладу.TabIndex = 10;
             // 
-            // textBox8
+            // Input_8_рік
             // 
-            this.textBox8.Location = new System.Drawing.Point(376, 328);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(23, 20);
-            this.textBox8.TabIndex = 9;
+            this.Input_8_рік.Location = new System.Drawing.Point(376, 328);
+            this.Input_8_рік.Name = "Input_8_рік";
+            this.Input_8_рік.Size = new System.Drawing.Size(23, 20);
+            this.Input_8_рік.TabIndex = 9;
             // 
-            // textBox7
+            // Input_7_місяць
             // 
-            this.textBox7.Location = new System.Drawing.Point(292, 328);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(69, 20);
-            this.textBox7.TabIndex = 8;
+            this.Input_7_місяць.Location = new System.Drawing.Point(292, 328);
+            this.Input_7_місяць.Name = "Input_7_місяць";
+            this.Input_7_місяць.Size = new System.Drawing.Size(69, 20);
+            this.Input_7_місяць.TabIndex = 8;
             // 
-            // textBox6
+            // Input_6_число
             // 
-            this.textBox6.Location = new System.Drawing.Point(252, 328);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(31, 20);
-            this.textBox6.TabIndex = 7;
+            this.Input_6_число.Location = new System.Drawing.Point(252, 328);
+            this.Input_6_число.Name = "Input_6_число";
+            this.Input_6_число.Size = new System.Drawing.Size(31, 20);
+            this.Input_6_число.TabIndex = 7;
             // 
-            // textBox5
+            // Input_5_номер_акту_форми
             // 
-            this.textBox5.Location = new System.Drawing.Point(181, 328);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(39, 20);
-            this.textBox5.TabIndex = 6;
+            this.Input_5_номер_акту_форми.Location = new System.Drawing.Point(181, 328);
+            this.Input_5_номер_акту_форми.Name = "Input_5_номер_акту_форми";
+            this.Input_5_номер_акту_форми.Size = new System.Drawing.Size(39, 20);
+            this.Input_5_номер_акту_форми.TabIndex = 6;
             // 
-            // textBox4
+            // Input_4_клас_група
             // 
-            this.textBox4.Location = new System.Drawing.Point(22, 278);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(586, 20);
-            this.textBox4.TabIndex = 5;
+            this.Input_4_клас_група.Location = new System.Drawing.Point(22, 278);
+            this.Input_4_клас_група.Name = "Input_4_клас_група";
+            this.Input_4_клас_група.Size = new System.Drawing.Size(586, 20);
+            this.Input_4_клас_група.TabIndex = 5;
             // 
-            // textBox3
+            // Input_3_навчальний_заклад
             // 
-            this.textBox3.Location = new System.Drawing.Point(232, 229);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(381, 20);
-            this.textBox3.TabIndex = 4;
+            this.Input_3_навчальний_заклад.Location = new System.Drawing.Point(232, 229);
+            this.Input_3_навчальний_заклад.Name = "Input_3_навчальний_заклад";
+            this.Input_3_навчальний_заклад.Size = new System.Drawing.Size(381, 20);
+            this.Input_3_навчальний_заклад.TabIndex = 4;
             // 
-            // textBox2
+            // Input_2_п_і_б
             // 
-            this.textBox2.Location = new System.Drawing.Point(22, 182);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(557, 20);
-            this.textBox2.TabIndex = 3;
+            this.Input_2_п_і_б.Location = new System.Drawing.Point(22, 182);
+            this.Input_2_п_і_б.Name = "Input_2_п_і_б";
+            this.Input_2_п_і_б.Size = new System.Drawing.Size(557, 20);
+            this.Input_2_п_і_б.TabIndex = 3;
             // 
-            // textBox1
+            // Input_1_орган_управління_освітою
             // 
-            this.textBox1.Location = new System.Drawing.Point(265, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(351, 20);
-            this.textBox1.TabIndex = 2;
+            this.Input_1_орган_управління_освітою.Location = new System.Drawing.Point(265, 59);
+            this.Input_1_орган_управління_освітою.Name = "Input_1_орган_управління_освітою";
+            this.Input_1_орган_управління_освітою.Size = new System.Drawing.Size(351, 20);
+            this.Input_1_орган_управління_освітою.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -219,20 +240,13 @@
             this.comboBox1.Size = new System.Drawing.Size(633, 21);
             this.comboBox1.TabIndex = 0;
             // 
-            // Column1
+            // Id
             // 
-            this.Column1.HeaderText = "Діагноз за довідкою лікувально- профілактичного закладу";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Звільнений від  навчання (відвідування) у         навчальному  закладі";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Число  днів невідвідування навчального закладу";
-            this.Column3.Name = "Column3";
+            this.Id.AutoSize = true;
+            this.Id.Location = new System.Drawing.Point(626, 27);
+            this.Id.Name = "Id";
+            this.Id.Size = new System.Drawing.Size(0, 13);
+            this.Id.TabIndex = 18;
             // 
             // Dodatoc2Form
             // 
@@ -243,9 +257,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Dodatoc2Form";
             this.Text = "Dodatoc2";
+            this.Load += new System.EventHandler(this.Dodatoc2Form_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DynamicTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -257,23 +272,24 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Input_13_рік;
+        private System.Windows.Forms.TextBox Input_12_місяць;
+        private System.Windows.Forms.TextBox Input_11_число;
+        private System.Windows.Forms.TextBox Input_10_ініціали_прізвище;
+        private System.Windows.Forms.TextBox Input_9_керівник_закладу;
+        private System.Windows.Forms.TextBox Input_8_рік;
+        private System.Windows.Forms.TextBox Input_7_місяць;
+        private System.Windows.Forms.TextBox Input_6_число;
+        private System.Windows.Forms.TextBox Input_5_номер_акту_форми;
+        private System.Windows.Forms.TextBox Input_4_клас_група;
+        private System.Windows.Forms.TextBox Input_3_навчальний_заклад;
+        private System.Windows.Forms.TextBox Input_2_п_і_б;
+        private System.Windows.Forms.TextBox Input_1_орган_управління_освітою;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DynamicTable1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Label Id;
     }
 }
