@@ -38,7 +38,8 @@ namespace Domain.Services
             var dodatoc2 = _reportContext.Dodatoc2s.First(x => x.Id == entity.Id);
             if (dodatoc2 != null)
             {
-                dodatoc2 = entity;
+                _reportContext.Entry(dodatoc2).CurrentValues.SetValues(entity);
+                _reportContext.Entry(dodatoc2).State = EntityState.Modified;
                 _reportContext.SaveChanges();
             }            
         }
