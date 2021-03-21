@@ -36,12 +36,7 @@ namespace UI.Helpers
                     if (hasGrid)
                     {
                         var grid = (DataGridView)control;
-                        var table = new DynamicTable(grid.Rows.Count, grid.Columns.Count);
-
-                        var grid00 = grid[0, 0].Value;
-                        var grid01 = grid[1, 0].Value;
-                        var grid02 = grid[2, 0].Value;
-
+                        var table = new DynamicTable(grid.Rows.Count, grid.Columns.Count, Convert.ToInt32(grid.Tag));
 
                         for (int i = 0; i < grid.Rows.Count; i++)
                         {

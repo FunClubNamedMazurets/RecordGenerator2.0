@@ -11,12 +11,14 @@ namespace Domain.Helpers
         public int ColumnsCount { get; set; }
         public int RowsCount { get; set; }
         public string[,] Data { get; set; }
+        public int TableTag { get; set; }
 
-        public DynamicTable(int rowsCount, int columnsCount)
+        public DynamicTable(int rowsCount, int columnsCount, int tableTag)
         {
             ColumnsCount = columnsCount;
             RowsCount = rowsCount;
             Data = new string[rowsCount, columnsCount];
+            TableTag = tableTag;
         }
     }
 }

@@ -27,8 +27,7 @@ namespace Domain.Generators
         public void ReadDocument()
         {
             application = new Application();
-            application.Visible = true;
-
+       
             document = application.Documents.Add(FilePath);
             document.Activate();
 
@@ -62,11 +61,11 @@ namespace Domain.Generators
 
                         for (int i = 0; i < dynamicTable.RowsCount-1; i++)
                         {
-                            document.Tables[3].Rows.Add();
+                            document.Tables[dynamicTable.TableTag].Rows.Add();
                         }
 
                         int n = 0, m = 0;
-                        foreach (Row row in document.Tables[3].Rows)
+                        foreach (Row row in document.Tables[dynamicTable.TableTag].Rows)
                         {
                             if (row.Index != 1)
                             {
@@ -83,6 +82,8 @@ namespace Domain.Generators
                     }
                 }
             }
+
+            application.Visible = true;
         }
 
         public void CloseDocument()

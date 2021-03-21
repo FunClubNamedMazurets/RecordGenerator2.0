@@ -30,107 +30,113 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaN5Form));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Input_42_члени_комісії_ініціали = new System.Windows.Forms.TextBox();
+            this.Input_41_члени_комісії_підпис = new System.Windows.Forms.TextBox();
+            this.Input_40_голова_комісії_ініціали = new System.Windows.Forms.TextBox();
+            this.Input_39_голова_комісії_підпис = new System.Windows.Forms.TextBox();
+            this.Input_38_висновки = new System.Windows.Forms.RichTextBox();
+            this.Input_37_заходи_усунення_нещасності = new System.Windows.Forms.RichTextBox();
+            this.Input_36_причини_нещасності = new System.Windows.Forms.RichTextBox();
+            this.Input_35_обставини_нещасності = new System.Windows.Forms.RichTextBox();
+            this.Input_34_характеристика_обєкта = new System.Windows.Forms.RichTextBox();
+            this.Input_33_відомості_про_потерпілих = new System.Windows.Forms.RichTextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Input_32_місце_події = new System.Windows.Forms.TextBox();
+            this.Input_31_рік = new System.Windows.Forms.TextBox();
+            this.Input_30_місяць = new System.Windows.Forms.TextBox();
+            this.Input_29_число = new System.Windows.Forms.TextBox();
+            this.Input_28_рік = new System.Windows.Forms.TextBox();
+            this.Input_27_місяць = new System.Windows.Forms.TextBox();
+            this.Input_26_число = new System.Windows.Forms.TextBox();
+            this.Input_25_участь_комісії_посада = new System.Windows.Forms.TextBox();
+            this.Input_24_участь_комісії_п_і_б = new System.Windows.Forms.TextBox();
+            this.Input_23_члени_комісії_посада = new System.Windows.Forms.TextBox();
+            this.Input_22_члени_комісії_п_і_б = new System.Windows.Forms.TextBox();
+            this.Input_21_голова_комісії_посада = new System.Windows.Forms.TextBox();
+            this.Input_20_голова_комісії_п_і_б = new System.Windows.Forms.TextBox();
+            this.Input_19_найменування_органу = new System.Windows.Forms.TextBox();
+            this.Input_18_номер_акту = new System.Windows.Forms.TextBox();
+            this.Input_17_рік = new System.Windows.Forms.TextBox();
+            this.Input_16_місяць = new System.Windows.Forms.TextBox();
+            this.Input_15_число = new System.Windows.Forms.TextBox();
+            this.Input_14_місце_складання_акта = new System.Windows.Forms.TextBox();
+            this.Input_13_дата_складання_акта = new System.Windows.Forms.TextBox();
+            this.Input_12_п_і_б_професія_посада = new System.Windows.Forms.TextBox();
+            this.Input_11_хвилина = new System.Windows.Forms.TextBox();
+            this.Input_10_година = new System.Windows.Forms.TextBox();
+            this.Input_8_місяць = new System.Windows.Forms.TextBox();
+            this.Input_7_число = new System.Windows.Forms.TextBox();
+            this.Input_5_місяць = new System.Windows.Forms.TextBox();
+            this.Input_4_число = new System.Windows.Forms.TextBox();
+            this.Input_3_ініціали_прізвище = new System.Windows.Forms.TextBox();
+            this.Input_2_підпис = new System.Windows.Forms.TextBox();
+            this.Input_1_посада_роботодавця = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Input_6_рік = new System.Windows.Forms.TextBox();
+            this.Input_9_рік = new System.Windows.Forms.TextBox();
+            this.Id = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.Id);
+            this.panel1.Controls.Add(this.Input_9_рік);
+            this.panel1.Controls.Add(this.Input_6_рік);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox34);
-            this.panel1.Controls.Add(this.textBox33);
-            this.panel1.Controls.Add(this.textBox32);
-            this.panel1.Controls.Add(this.textBox31);
-            this.panel1.Controls.Add(this.richTextBox6);
-            this.panel1.Controls.Add(this.richTextBox5);
-            this.panel1.Controls.Add(this.richTextBox4);
-            this.panel1.Controls.Add(this.richTextBox3);
-            this.panel1.Controls.Add(this.richTextBox2);
-            this.panel1.Controls.Add(this.richTextBox1);
+            this.panel1.Controls.Add(this.Input_42_члени_комісії_ініціали);
+            this.panel1.Controls.Add(this.Input_41_члени_комісії_підпис);
+            this.panel1.Controls.Add(this.Input_40_голова_комісії_ініціали);
+            this.panel1.Controls.Add(this.Input_39_голова_комісії_підпис);
+            this.panel1.Controls.Add(this.Input_38_висновки);
+            this.panel1.Controls.Add(this.Input_37_заходи_усунення_нещасності);
+            this.panel1.Controls.Add(this.Input_36_причини_нещасності);
+            this.panel1.Controls.Add(this.Input_35_обставини_нещасності);
+            this.panel1.Controls.Add(this.Input_34_характеристика_обєкта);
+            this.panel1.Controls.Add(this.Input_33_відомості_про_потерпілих);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.textBox30);
-            this.panel1.Controls.Add(this.textBox29);
-            this.panel1.Controls.Add(this.textBox28);
-            this.panel1.Controls.Add(this.textBox27);
-            this.panel1.Controls.Add(this.textBox26);
-            this.panel1.Controls.Add(this.textBox25);
-            this.panel1.Controls.Add(this.textBox24);
-            this.panel1.Controls.Add(this.textBox23);
-            this.panel1.Controls.Add(this.textBox22);
-            this.panel1.Controls.Add(this.textBox21);
-            this.panel1.Controls.Add(this.textBox20);
-            this.panel1.Controls.Add(this.textBox19);
-            this.panel1.Controls.Add(this.textBox18);
-            this.panel1.Controls.Add(this.textBox17);
-            this.panel1.Controls.Add(this.textBox16);
-            this.panel1.Controls.Add(this.textBox15);
-            this.panel1.Controls.Add(this.textBox14);
-            this.panel1.Controls.Add(this.textBox13);
-            this.panel1.Controls.Add(this.textBox12);
-            this.panel1.Controls.Add(this.textBox11);
-            this.panel1.Controls.Add(this.textBox10);
-            this.panel1.Controls.Add(this.textBox9);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.Input_32_місце_події);
+            this.panel1.Controls.Add(this.Input_31_рік);
+            this.panel1.Controls.Add(this.Input_30_місяць);
+            this.panel1.Controls.Add(this.Input_29_число);
+            this.panel1.Controls.Add(this.Input_28_рік);
+            this.panel1.Controls.Add(this.Input_27_місяць);
+            this.panel1.Controls.Add(this.Input_26_число);
+            this.panel1.Controls.Add(this.Input_25_участь_комісії_посада);
+            this.panel1.Controls.Add(this.Input_24_участь_комісії_п_і_б);
+            this.panel1.Controls.Add(this.Input_23_члени_комісії_посада);
+            this.panel1.Controls.Add(this.Input_22_члени_комісії_п_і_б);
+            this.panel1.Controls.Add(this.Input_21_голова_комісії_посада);
+            this.panel1.Controls.Add(this.Input_20_голова_комісії_п_і_б);
+            this.panel1.Controls.Add(this.Input_19_найменування_органу);
+            this.panel1.Controls.Add(this.Input_18_номер_акту);
+            this.panel1.Controls.Add(this.Input_17_рік);
+            this.panel1.Controls.Add(this.Input_16_місяць);
+            this.panel1.Controls.Add(this.Input_15_число);
+            this.panel1.Controls.Add(this.Input_14_місце_складання_акта);
+            this.panel1.Controls.Add(this.Input_13_дата_складання_акта);
+            this.panel1.Controls.Add(this.Input_12_п_і_б_професія_посада);
+            this.panel1.Controls.Add(this.Input_11_хвилина);
+            this.panel1.Controls.Add(this.Input_10_година);
+            this.panel1.Controls.Add(this.Input_8_місяць);
+            this.panel1.Controls.Add(this.Input_7_число);
+            this.panel1.Controls.Add(this.Input_5_місяць);
+            this.panel1.Controls.Add(this.Input_4_число);
+            this.panel1.Controls.Add(this.Input_3_ініціали_прізвище);
+            this.panel1.Controls.Add(this.Input_2_підпис);
+            this.panel1.Controls.Add(this.Input_1_посада_роботодавця);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
@@ -138,254 +144,101 @@
             this.panel1.Size = new System.Drawing.Size(700, 2306);
             this.panel1.TabIndex = 0;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(680, 21);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 40);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(680, 786);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(345, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(326, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(345, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(119, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(480, 123);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 20);
-            this.textBox3.TabIndex = 4;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(492, 181);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(36, 20);
-            this.textBox4.TabIndex = 5;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(536, 181);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(109, 20);
-            this.textBox5.TabIndex = 6;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(181, 284);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(37, 18);
-            this.textBox6.TabIndex = 7;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(226, 284);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(108, 18);
-            this.textBox7.TabIndex = 8;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(364, 284);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(45, 18);
-            this.textBox8.TabIndex = 9;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(442, 284);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(42, 18);
-            this.textBox9.TabIndex = 10;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(41, 311);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(630, 20);
-            this.textBox10.TabIndex = 11;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(18, 381);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(304, 20);
-            this.textBox11.TabIndex = 12;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(364, 381);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(307, 20);
-            this.textBox12.TabIndex = 13;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(230, 438);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(30, 20);
-            this.textBox13.TabIndex = 14;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(270, 438);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(86, 20);
-            this.textBox14.TabIndex = 15;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(376, 438);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(30, 20);
-            this.textBox15.TabIndex = 16;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(436, 438);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(45, 20);
-            this.textBox16.TabIndex = 17;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(24, 470);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(647, 20);
-            this.textBox17.TabIndex = 18;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(208, 540);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(201, 20);
-            this.textBox18.TabIndex = 19;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(454, 540);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(194, 20);
-            this.textBox19.TabIndex = 20;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(208, 590);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(201, 20);
-            this.textBox20.TabIndex = 21;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(454, 590);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(194, 20);
-            this.textBox21.TabIndex = 22;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(208, 640);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(201, 20);
-            this.textBox22.TabIndex = 23;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(454, 640);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(194, 20);
-            this.textBox23.TabIndex = 24;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(151, 716);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(31, 20);
-            this.textBox24.TabIndex = 25;
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(192, 716);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(86, 20);
-            this.textBox25.TabIndex = 26;
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(299, 716);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(29, 20);
-            this.textBox26.TabIndex = 27;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(376, 716);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(30, 20);
-            this.textBox27.TabIndex = 28;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(416, 716);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(39, 20);
-            this.textBox28.TabIndex = 29;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(476, 716);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(30, 20);
-            this.textBox29.TabIndex = 30;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(24, 777);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(647, 20);
-            this.textBox30.TabIndex = 31;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 832);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(680, 678);
-            this.pictureBox2.TabIndex = 32;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 1516);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(680, 200);
-            this.pictureBox3.TabIndex = 33;
-            this.pictureBox3.TabStop = false;
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(362, 2271);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(91, 23);
+            this.button2.TabIndex = 46;
+            this.button2.Text = "Зберегти";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(267, 2271);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 23);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "Згенерувати";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Input_42_члени_комісії_ініціали
+            // 
+            this.Input_42_члени_комісії_ініціали.Location = new System.Drawing.Point(456, 2217);
+            this.Input_42_члени_комісії_ініціали.Name = "Input_42_члени_комісії_ініціали";
+            this.Input_42_члени_комісії_ініціали.Size = new System.Drawing.Size(194, 20);
+            this.Input_42_члени_комісії_ініціали.TabIndex = 44;
+            // 
+            // Input_41_члени_комісії_підпис
+            // 
+            this.Input_41_члени_комісії_підпис.Location = new System.Drawing.Point(210, 2217);
+            this.Input_41_члени_комісії_підпис.Name = "Input_41_члени_комісії_підпис";
+            this.Input_41_члени_комісії_підпис.Size = new System.Drawing.Size(201, 20);
+            this.Input_41_члени_комісії_підпис.TabIndex = 43;
+            // 
+            // Input_40_голова_комісії_ініціали
+            // 
+            this.Input_40_голова_комісії_ініціали.Location = new System.Drawing.Point(456, 2181);
+            this.Input_40_голова_комісії_ініціали.Name = "Input_40_голова_комісії_ініціали";
+            this.Input_40_голова_комісії_ініціали.Size = new System.Drawing.Size(194, 20);
+            this.Input_40_голова_комісії_ініціали.TabIndex = 42;
+            // 
+            // Input_39_голова_комісії_підпис
+            // 
+            this.Input_39_голова_комісії_підпис.Location = new System.Drawing.Point(210, 2181);
+            this.Input_39_голова_комісії_підпис.Name = "Input_39_голова_комісії_підпис";
+            this.Input_39_голова_комісії_підпис.Size = new System.Drawing.Size(201, 20);
+            this.Input_39_голова_комісії_підпис.TabIndex = 41;
+            // 
+            // Input_38_висновки
+            // 
+            this.Input_38_висновки.Location = new System.Drawing.Point(24, 1872);
+            this.Input_38_висновки.Name = "Input_38_висновки";
+            this.Input_38_висновки.Size = new System.Drawing.Size(639, 70);
+            this.Input_38_висновки.TabIndex = 40;
+            this.Input_38_висновки.Text = "";
+            // 
+            // Input_37_заходи_усунення_нещасності
+            // 
+            this.Input_37_заходи_усунення_нещасності.Location = new System.Drawing.Point(24, 1748);
+            this.Input_37_заходи_усунення_нещасності.Name = "Input_37_заходи_усунення_нещасності";
+            this.Input_37_заходи_усунення_нещасності.Size = new System.Drawing.Size(639, 69);
+            this.Input_37_заходи_усунення_нещасності.TabIndex = 39;
+            this.Input_37_заходи_усунення_нещасності.Text = "";
+            // 
+            // Input_36_причини_нещасності
+            // 
+            this.Input_36_причини_нещасності.Location = new System.Drawing.Point(24, 1540);
+            this.Input_36_причини_нещасності.Name = "Input_36_причини_нещасності";
+            this.Input_36_причини_нещасності.Size = new System.Drawing.Size(639, 74);
+            this.Input_36_причини_нещасності.TabIndex = 38;
+            this.Input_36_причини_нещасності.Text = "";
+            // 
+            // Input_35_обставини_нещасності
+            // 
+            this.Input_35_обставини_нещасності.Location = new System.Drawing.Point(24, 1300);
+            this.Input_35_обставини_нещасності.Name = "Input_35_обставини_нещасності";
+            this.Input_35_обставини_нещасності.Size = new System.Drawing.Size(639, 82);
+            this.Input_35_обставини_нещасності.TabIndex = 37;
+            this.Input_35_обставини_нещасності.Text = "";
+            // 
+            // Input_34_характеристика_обєкта
+            // 
+            this.Input_34_характеристика_обєкта.Location = new System.Drawing.Point(24, 1056);
+            this.Input_34_характеристика_обєкта.Name = "Input_34_характеристика_обєкта";
+            this.Input_34_характеристика_обєкта.Size = new System.Drawing.Size(639, 82);
+            this.Input_34_характеристика_обєкта.TabIndex = 36;
+            this.Input_34_характеристика_обєкта.Text = "";
+            // 
+            // Input_33_відомості_про_потерпілих
+            // 
+            this.Input_33_відомості_про_потерпілих.Location = new System.Drawing.Point(24, 851);
+            this.Input_33_відомості_про_потерпілих.Name = "Input_33_відомості_про_потерпілих";
+            this.Input_33_відомості_про_потерпілих.Size = new System.Drawing.Size(639, 82);
+            this.Input_33_відомості_про_потерпілих.TabIndex = 35;
+            this.Input_33_відомості_про_потерпілих.Text = "";
             // 
             // pictureBox4
             // 
@@ -396,99 +249,276 @@
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
             // 
-            // richTextBox1
+            // pictureBox3
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(24, 851);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(639, 82);
-            this.richTextBox1.TabIndex = 35;
-            this.richTextBox1.Text = "";
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 1516);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(680, 200);
+            this.pictureBox3.TabIndex = 33;
+            this.pictureBox3.TabStop = false;
             // 
-            // richTextBox2
+            // pictureBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(24, 1056);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(639, 82);
-            this.richTextBox2.TabIndex = 36;
-            this.richTextBox2.Text = "";
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 832);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(680, 678);
+            this.pictureBox2.TabIndex = 32;
+            this.pictureBox2.TabStop = false;
             // 
-            // richTextBox3
+            // Input_32_місце_події
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(24, 1300);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(639, 82);
-            this.richTextBox3.TabIndex = 37;
-            this.richTextBox3.Text = "";
+            this.Input_32_місце_події.Location = new System.Drawing.Point(24, 777);
+            this.Input_32_місце_події.Name = "Input_32_місце_події";
+            this.Input_32_місце_події.Size = new System.Drawing.Size(647, 20);
+            this.Input_32_місце_події.TabIndex = 31;
             // 
-            // richTextBox4
+            // Input_31_рік
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(24, 1540);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(639, 74);
-            this.richTextBox4.TabIndex = 38;
-            this.richTextBox4.Text = "";
+            this.Input_31_рік.Location = new System.Drawing.Point(476, 716);
+            this.Input_31_рік.Name = "Input_31_рік";
+            this.Input_31_рік.Size = new System.Drawing.Size(30, 20);
+            this.Input_31_рік.TabIndex = 30;
             // 
-            // richTextBox5
+            // Input_30_місяць
             // 
-            this.richTextBox5.Location = new System.Drawing.Point(24, 1748);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(639, 69);
-            this.richTextBox5.TabIndex = 39;
-            this.richTextBox5.Text = "";
+            this.Input_30_місяць.Location = new System.Drawing.Point(416, 716);
+            this.Input_30_місяць.Name = "Input_30_місяць";
+            this.Input_30_місяць.Size = new System.Drawing.Size(39, 20);
+            this.Input_30_місяць.TabIndex = 29;
             // 
-            // richTextBox6
+            // Input_29_число
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(24, 1872);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(639, 70);
-            this.richTextBox6.TabIndex = 40;
-            this.richTextBox6.Text = "";
+            this.Input_29_число.Location = new System.Drawing.Point(376, 716);
+            this.Input_29_число.Name = "Input_29_число";
+            this.Input_29_число.Size = new System.Drawing.Size(30, 20);
+            this.Input_29_число.TabIndex = 28;
             // 
-            // textBox31
+            // Input_28_рік
             // 
-            this.textBox31.Location = new System.Drawing.Point(210, 2181);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(201, 20);
-            this.textBox31.TabIndex = 41;
+            this.Input_28_рік.Location = new System.Drawing.Point(299, 716);
+            this.Input_28_рік.Name = "Input_28_рік";
+            this.Input_28_рік.Size = new System.Drawing.Size(29, 20);
+            this.Input_28_рік.TabIndex = 27;
             // 
-            // textBox32
+            // Input_27_місяць
             // 
-            this.textBox32.Location = new System.Drawing.Point(456, 2181);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(194, 20);
-            this.textBox32.TabIndex = 42;
+            this.Input_27_місяць.Location = new System.Drawing.Point(192, 716);
+            this.Input_27_місяць.Name = "Input_27_місяць";
+            this.Input_27_місяць.Size = new System.Drawing.Size(86, 20);
+            this.Input_27_місяць.TabIndex = 26;
             // 
-            // textBox33
+            // Input_26_число
             // 
-            this.textBox33.Location = new System.Drawing.Point(210, 2217);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(201, 20);
-            this.textBox33.TabIndex = 43;
+            this.Input_26_число.Location = new System.Drawing.Point(151, 716);
+            this.Input_26_число.Name = "Input_26_число";
+            this.Input_26_число.Size = new System.Drawing.Size(31, 20);
+            this.Input_26_число.TabIndex = 25;
             // 
-            // textBox34
+            // Input_25_участь_комісії_посада
             // 
-            this.textBox34.Location = new System.Drawing.Point(456, 2217);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(194, 20);
-            this.textBox34.TabIndex = 44;
+            this.Input_25_участь_комісії_посада.Location = new System.Drawing.Point(454, 640);
+            this.Input_25_участь_комісії_посада.Name = "Input_25_участь_комісії_посада";
+            this.Input_25_участь_комісії_посада.Size = new System.Drawing.Size(194, 20);
+            this.Input_25_участь_комісії_посада.TabIndex = 24;
             // 
-            // button1
+            // Input_24_участь_комісії_п_і_б
             // 
-            this.button1.Location = new System.Drawing.Point(267, 2271);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 23);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "Згенерувати";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Input_24_участь_комісії_п_і_б.Location = new System.Drawing.Point(208, 640);
+            this.Input_24_участь_комісії_п_і_б.Name = "Input_24_участь_комісії_п_і_б";
+            this.Input_24_участь_комісії_п_і_б.Size = new System.Drawing.Size(201, 20);
+            this.Input_24_участь_комісії_п_і_б.TabIndex = 23;
             // 
-            // button2
+            // Input_23_члени_комісії_посада
             // 
-            this.button2.Location = new System.Drawing.Point(362, 2271);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 23);
-            this.button2.TabIndex = 46;
-            this.button2.Text = "Зберегти";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Input_23_члени_комісії_посада.Location = new System.Drawing.Point(454, 590);
+            this.Input_23_члени_комісії_посада.Name = "Input_23_члени_комісії_посада";
+            this.Input_23_члени_комісії_посада.Size = new System.Drawing.Size(194, 20);
+            this.Input_23_члени_комісії_посада.TabIndex = 22;
+            // 
+            // Input_22_члени_комісії_п_і_б
+            // 
+            this.Input_22_члени_комісії_п_і_б.Location = new System.Drawing.Point(208, 590);
+            this.Input_22_члени_комісії_п_і_б.Name = "Input_22_члени_комісії_п_і_б";
+            this.Input_22_члени_комісії_п_і_б.Size = new System.Drawing.Size(201, 20);
+            this.Input_22_члени_комісії_п_і_б.TabIndex = 21;
+            // 
+            // Input_21_голова_комісії_посада
+            // 
+            this.Input_21_голова_комісії_посада.Location = new System.Drawing.Point(454, 540);
+            this.Input_21_голова_комісії_посада.Name = "Input_21_голова_комісії_посада";
+            this.Input_21_голова_комісії_посада.Size = new System.Drawing.Size(194, 20);
+            this.Input_21_голова_комісії_посада.TabIndex = 20;
+            // 
+            // Input_20_голова_комісії_п_і_б
+            // 
+            this.Input_20_голова_комісії_п_і_б.Location = new System.Drawing.Point(208, 540);
+            this.Input_20_голова_комісії_п_і_б.Name = "Input_20_голова_комісії_п_і_б";
+            this.Input_20_голова_комісії_п_і_б.Size = new System.Drawing.Size(201, 20);
+            this.Input_20_голова_комісії_п_і_б.TabIndex = 19;
+            // 
+            // Input_19_найменування_органу
+            // 
+            this.Input_19_найменування_органу.Location = new System.Drawing.Point(24, 470);
+            this.Input_19_найменування_органу.Name = "Input_19_найменування_органу";
+            this.Input_19_найменування_органу.Size = new System.Drawing.Size(647, 20);
+            this.Input_19_найменування_органу.TabIndex = 18;
+            // 
+            // Input_18_номер_акту
+            // 
+            this.Input_18_номер_акту.Location = new System.Drawing.Point(436, 438);
+            this.Input_18_номер_акту.Name = "Input_18_номер_акту";
+            this.Input_18_номер_акту.Size = new System.Drawing.Size(45, 20);
+            this.Input_18_номер_акту.TabIndex = 17;
+            // 
+            // Input_17_рік
+            // 
+            this.Input_17_рік.Location = new System.Drawing.Point(376, 438);
+            this.Input_17_рік.Name = "Input_17_рік";
+            this.Input_17_рік.Size = new System.Drawing.Size(30, 20);
+            this.Input_17_рік.TabIndex = 16;
+            // 
+            // Input_16_місяць
+            // 
+            this.Input_16_місяць.Location = new System.Drawing.Point(270, 438);
+            this.Input_16_місяць.Name = "Input_16_місяць";
+            this.Input_16_місяць.Size = new System.Drawing.Size(86, 20);
+            this.Input_16_місяць.TabIndex = 15;
+            // 
+            // Input_15_число
+            // 
+            this.Input_15_число.Location = new System.Drawing.Point(230, 438);
+            this.Input_15_число.Name = "Input_15_число";
+            this.Input_15_число.Size = new System.Drawing.Size(30, 20);
+            this.Input_15_число.TabIndex = 14;
+            // 
+            // Input_14_місце_складання_акта
+            // 
+            this.Input_14_місце_складання_акта.Location = new System.Drawing.Point(364, 381);
+            this.Input_14_місце_складання_акта.Name = "Input_14_місце_складання_акта";
+            this.Input_14_місце_складання_акта.Size = new System.Drawing.Size(307, 20);
+            this.Input_14_місце_складання_акта.TabIndex = 13;
+            // 
+            // Input_13_дата_складання_акта
+            // 
+            this.Input_13_дата_складання_акта.Location = new System.Drawing.Point(18, 381);
+            this.Input_13_дата_складання_акта.Name = "Input_13_дата_складання_акта";
+            this.Input_13_дата_складання_акта.Size = new System.Drawing.Size(304, 20);
+            this.Input_13_дата_складання_акта.TabIndex = 12;
+            // 
+            // Input_12_п_і_б_професія_посада
+            // 
+            this.Input_12_п_і_б_професія_посада.Location = new System.Drawing.Point(41, 311);
+            this.Input_12_п_і_б_професія_посада.Name = "Input_12_п_і_б_професія_посада";
+            this.Input_12_п_і_б_професія_посада.Size = new System.Drawing.Size(630, 20);
+            this.Input_12_п_і_б_професія_посада.TabIndex = 11;
+            // 
+            // Input_11_хвилина
+            // 
+            this.Input_11_хвилина.Location = new System.Drawing.Point(442, 284);
+            this.Input_11_хвилина.Multiline = true;
+            this.Input_11_хвилина.Name = "Input_11_хвилина";
+            this.Input_11_хвилина.Size = new System.Drawing.Size(42, 18);
+            this.Input_11_хвилина.TabIndex = 10;
+            // 
+            // Input_10_година
+            // 
+            this.Input_10_година.Location = new System.Drawing.Point(364, 284);
+            this.Input_10_година.Multiline = true;
+            this.Input_10_година.Name = "Input_10_година";
+            this.Input_10_година.Size = new System.Drawing.Size(45, 18);
+            this.Input_10_година.TabIndex = 9;
+            // 
+            // Input_8_місяць
+            // 
+            this.Input_8_місяць.Location = new System.Drawing.Point(226, 284);
+            this.Input_8_місяць.Multiline = true;
+            this.Input_8_місяць.Name = "Input_8_місяць";
+            this.Input_8_місяць.Size = new System.Drawing.Size(67, 18);
+            this.Input_8_місяць.TabIndex = 8;
+            // 
+            // Input_7_число
+            // 
+            this.Input_7_число.Location = new System.Drawing.Point(181, 284);
+            this.Input_7_число.Multiline = true;
+            this.Input_7_число.Name = "Input_7_число";
+            this.Input_7_число.Size = new System.Drawing.Size(37, 18);
+            this.Input_7_число.TabIndex = 7;
+            // 
+            // Input_5_місяць
+            // 
+            this.Input_5_місяць.Location = new System.Drawing.Point(536, 181);
+            this.Input_5_місяць.Name = "Input_5_місяць";
+            this.Input_5_місяць.Size = new System.Drawing.Size(68, 20);
+            this.Input_5_місяць.TabIndex = 6;
+            // 
+            // Input_4_число
+            // 
+            this.Input_4_число.Location = new System.Drawing.Point(492, 181);
+            this.Input_4_число.Name = "Input_4_число";
+            this.Input_4_число.Size = new System.Drawing.Size(36, 20);
+            this.Input_4_число.TabIndex = 5;
+            // 
+            // Input_3_ініціали_прізвище
+            // 
+            this.Input_3_ініціали_прізвище.Location = new System.Drawing.Point(480, 123);
+            this.Input_3_ініціали_прізвище.Name = "Input_3_ініціали_прізвище";
+            this.Input_3_ініціали_прізвище.Size = new System.Drawing.Size(191, 20);
+            this.Input_3_ініціали_прізвище.TabIndex = 4;
+            // 
+            // Input_2_підпис
+            // 
+            this.Input_2_підпис.Location = new System.Drawing.Point(345, 123);
+            this.Input_2_підпис.Name = "Input_2_підпис";
+            this.Input_2_підпис.Size = new System.Drawing.Size(119, 20);
+            this.Input_2_підпис.TabIndex = 3;
+            // 
+            // Input_1_посада_роботодавця
+            // 
+            this.Input_1_посада_роботодавця.Location = new System.Drawing.Point(345, 71);
+            this.Input_1_посада_роботодавця.Name = "Input_1_посада_роботодавця";
+            this.Input_1_посада_роботодавця.Size = new System.Drawing.Size(326, 20);
+            this.Input_1_посада_роботодавця.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 40);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(680, 786);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 3);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(680, 21);
+            this.comboBox1.TabIndex = 0;
+            // 
+            // Input_6_рік
+            // 
+            this.Input_6_рік.Location = new System.Drawing.Point(623, 181);
+            this.Input_6_рік.Name = "Input_6_рік";
+            this.Input_6_рік.Size = new System.Drawing.Size(25, 20);
+            this.Input_6_рік.TabIndex = 47;
+            // 
+            // Input_9_рік
+            // 
+            this.Input_9_рік.Location = new System.Drawing.Point(311, 283);
+            this.Input_9_рік.Name = "Input_9_рік";
+            this.Input_9_рік.Size = new System.Drawing.Size(27, 20);
+            this.Input_9_рік.TabIndex = 48;
+            // 
+            // Id
+            // 
+            this.Id.AutoSize = true;
+            this.Id.Location = new System.Drawing.Point(41, 71);
+            this.Id.Name = "Id";
+            this.Id.Size = new System.Drawing.Size(0, 13);
+            this.Id.TabIndex = 49;
             // 
             // FormaN5Form
             // 
@@ -502,10 +532,10 @@
             this.Text = "FormaN5";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -515,50 +545,53 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox Input_5_місяць;
+        private System.Windows.Forms.TextBox Input_4_число;
+        private System.Windows.Forms.TextBox Input_3_ініціали_прізвище;
+        private System.Windows.Forms.TextBox Input_2_підпис;
+        private System.Windows.Forms.TextBox Input_1_посада_роботодавця;
+        private System.Windows.Forms.TextBox Input_8_місяць;
+        private System.Windows.Forms.TextBox Input_7_число;
+        private System.Windows.Forms.TextBox Input_28_рік;
+        private System.Windows.Forms.TextBox Input_27_місяць;
+        private System.Windows.Forms.TextBox Input_26_число;
+        private System.Windows.Forms.TextBox Input_25_участь_комісії_посада;
+        private System.Windows.Forms.TextBox Input_24_участь_комісії_п_і_б;
+        private System.Windows.Forms.TextBox Input_23_члени_комісії_посада;
+        private System.Windows.Forms.TextBox Input_22_члени_комісії_п_і_б;
+        private System.Windows.Forms.TextBox Input_21_голова_комісії_посада;
+        private System.Windows.Forms.TextBox Input_20_голова_комісії_п_і_б;
+        private System.Windows.Forms.TextBox Input_19_найменування_органу;
+        private System.Windows.Forms.TextBox Input_18_номер_акту;
+        private System.Windows.Forms.TextBox Input_17_рік;
+        private System.Windows.Forms.TextBox Input_16_місяць;
+        private System.Windows.Forms.TextBox Input_15_число;
+        private System.Windows.Forms.TextBox Input_14_місце_складання_акта;
+        private System.Windows.Forms.TextBox Input_13_дата_складання_акта;
+        private System.Windows.Forms.TextBox Input_12_п_і_б_професія_посада;
+        private System.Windows.Forms.TextBox Input_11_хвилина;
+        private System.Windows.Forms.TextBox Input_10_година;
+        private System.Windows.Forms.TextBox Input_32_місце_події;
+        private System.Windows.Forms.TextBox Input_31_рік;
+        private System.Windows.Forms.TextBox Input_30_місяць;
+        private System.Windows.Forms.TextBox Input_29_число;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox Input_36_причини_нещасності;
+        private System.Windows.Forms.RichTextBox Input_35_обставини_нещасності;
+        private System.Windows.Forms.RichTextBox Input_34_характеристика_обєкта;
+        private System.Windows.Forms.RichTextBox Input_33_відомості_про_потерпілих;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.RichTextBox richTextBox6;
-        private System.Windows.Forms.RichTextBox richTextBox5;
+        private System.Windows.Forms.TextBox Input_42_члени_комісії_ініціали;
+        private System.Windows.Forms.TextBox Input_41_члени_комісії_підпис;
+        private System.Windows.Forms.TextBox Input_40_голова_комісії_ініціали;
+        private System.Windows.Forms.TextBox Input_39_голова_комісії_підпис;
+        private System.Windows.Forms.RichTextBox Input_38_висновки;
+        private System.Windows.Forms.RichTextBox Input_37_заходи_усунення_нещасності;
+        private System.Windows.Forms.TextBox Input_6_рік;
+        private System.Windows.Forms.TextBox Input_9_рік;
+        private System.Windows.Forms.Label Id;
     }
 }
