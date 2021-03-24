@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Domain.Data.Contexts;
+using Domain.Data.Entities;
+using System.Data.Entity;
 
 namespace Domain.Services
 {
@@ -17,7 +17,7 @@ namespace Domain.Services
 
         public FormaZvt GetById(int id)
         {
-            return _reportContext.FormaZvts.Where(x => x.Id == id).First();
+            return _reportContext.FormaZvts.Where(x => x.Id == id).FirstOrDefault();
         }
 
         public IList<FormaZvt> GetAll()
@@ -33,7 +33,7 @@ namespace Domain.Services
 
         public void Update(FormaZvt entity)
         {
-            var formaZvt = _reportContext.FormaZvts.First(x => x.Id == entity.Id);
+            var formaZvt = _reportContext.FormaZvts.FirstOrDefault(x => x.Id == entity.Id);
             if (formaZvt != null)
             {
                 _reportContext.Entry(formaZvt).CurrentValues.SetValues(entity);
@@ -44,7 +44,7 @@ namespace Domain.Services
 
         public void Delete(int id)
         {
-            var formaZvt = _reportContext.FormaZvts.First(x => x.Id == id);
+            var formaZvt = _reportContext.FormaZvts.FirstOrDefault(x => x.Id == id);
 
             if (formaZvt != null)
             {

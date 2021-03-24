@@ -21,7 +21,7 @@ namespace UI
 
         private void Dodatoc4Grid_Load(object sender, EventArgs e)
         {
-            dodatoc4TableAdapter.Fill(_generator_2DataSet.Dodatoc4);
+
         }
     }
 }

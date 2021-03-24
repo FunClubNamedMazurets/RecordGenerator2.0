@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Domain.Data.Contexts;
+using Domain.Data.Entities;
+using System.Data.Entity;
 
 namespace Domain.Services
 {
@@ -17,7 +17,7 @@ namespace Domain.Services
 
         public FormaNpv GetById(int id)
         {
-            return _reportContext.FormaNpvs.Where(x => x.Id == id).First();
+            return _reportContext.FormaNpvs.Where(x => x.Id == id).FirstOrDefault();
         }
 
         public IList<FormaNpv> GetAll()
@@ -33,7 +33,7 @@ namespace Domain.Services
 
         public void Update(FormaNpv entity)
         {
-            var formaNpv = _reportContext.FormaNpvs.First(x => x.Id == entity.Id);
+            var formaNpv = _reportContext.FormaNpvs.FirstOrDefault(x => x.Id == entity.Id);
             if (formaNpv != null)
             {
                 _reportContext.Entry(formaNpv).CurrentValues.SetValues(entity);
@@ -44,7 +44,7 @@ namespace Domain.Services
 
         public void Delete(int id)
         {
-            var formaNpv = _reportContext.FormaNpvs.First(x => x.Id == id);
+            var formaNpv = _reportContext.FormaNpvs.FirstOrDefault(x => x.Id == id);
 
             if (formaNpv != null)
             {

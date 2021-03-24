@@ -1,6 +1,6 @@
-using Domain.Helpers;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -120,6 +120,7 @@ namespace Domain.Data.Entities
         public string Input_100_μ³ρÿφό { get; set; }
         public string Input_101_π³κ { get; set; }
 
+        [NotMapped]
         public DynamicTable DynamicTable1 { get; set; }
     }
 }

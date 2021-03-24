@@ -37,13 +37,13 @@
             this.forma7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.forma7ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.formaN5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formaNpvToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formaNtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formaZvtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.даніToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.dodatoc4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formaNpvToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formaNtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formaZvtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,51 +78,72 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(134, 22);
             this.toolStripMenuItem2.Text = "Dodatoc1";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(134, 22);
             this.toolStripMenuItem3.Text = "Dodatoc2";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(134, 22);
             this.toolStripMenuItem4.Text = "Dodatoc4";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // dodatoc5ToolStripMenuItem
             // 
             this.dodatoc5ToolStripMenuItem.Name = "dodatoc5ToolStripMenuItem";
-            this.dodatoc5ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dodatoc5ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.dodatoc5ToolStripMenuItem.Text = "Dodatoc5";
             this.dodatoc5ToolStripMenuItem.Click += new System.EventHandler(this.dodatoc5ToolStripMenuItem_Click);
             // 
             // forma7ToolStripMenuItem
             // 
             this.forma7ToolStripMenuItem.Name = "forma7ToolStripMenuItem";
-            this.forma7ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.forma7ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.forma7ToolStripMenuItem.Text = "Forma7 tnv";
             this.forma7ToolStripMenuItem.Click += new System.EventHandler(this.forma7ToolStripMenuItem_Click);
             // 
             // forma7ToolStripMenuItem1
             // 
             this.forma7ToolStripMenuItem1.Name = "forma7ToolStripMenuItem1";
-            this.forma7ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.forma7ToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
             this.forma7ToolStripMenuItem1.Text = "Forma n1";
             this.forma7ToolStripMenuItem1.Click += new System.EventHandler(this.forma7ToolStripMenuItem1_Click);
             // 
             // formaN5ToolStripMenuItem
             // 
             this.formaN5ToolStripMenuItem.Name = "formaN5ToolStripMenuItem";
-            this.formaN5ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formaN5ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.formaN5ToolStripMenuItem.Text = "Forma n5";
             this.formaN5ToolStripMenuItem.Click += new System.EventHandler(this.formaN5ToolStripMenuItem_Click);
+            // 
+            // formaNpvToolStripMenuItem
+            // 
+            this.formaNpvToolStripMenuItem.Name = "formaNpvToolStripMenuItem";
+            this.formaNpvToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.formaNpvToolStripMenuItem.Text = "Forma npv";
+            this.formaNpvToolStripMenuItem.Click += new System.EventHandler(this.formaNpvToolStripMenuItem_Click);
+            // 
+            // formaNtToolStripMenuItem
+            // 
+            this.formaNtToolStripMenuItem.Name = "formaNtToolStripMenuItem";
+            this.formaNtToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.formaNtToolStripMenuItem.Text = "Forma nt";
+            this.formaNtToolStripMenuItem.Click += new System.EventHandler(this.formaNtToolStripMenuItem_Click);
+            // 
+            // formaZvtToolStripMenuItem
+            // 
+            this.formaZvtToolStripMenuItem.Name = "formaZvtToolStripMenuItem";
+            this.formaZvtToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.formaZvtToolStripMenuItem.Text = "Forma zvt";
+            this.formaZvtToolStripMenuItem.Click += new System.EventHandler(this.formaZvtToolStripMenuItem_Click);
             // 
             // даніToolStripMenuItem
             // 
@@ -153,27 +174,6 @@
             this.dodatoc4ToolStripMenuItem.Text = "Dodatoc4";
             this.dodatoc4ToolStripMenuItem.Click += new System.EventHandler(this.dodatoc4ToolStripMenuItem_Click);
             // 
-            // formaNpvToolStripMenuItem
-            // 
-            this.formaNpvToolStripMenuItem.Name = "formaNpvToolStripMenuItem";
-            this.formaNpvToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.formaNpvToolStripMenuItem.Text = "Forma npv";
-            this.formaNpvToolStripMenuItem.Click += new System.EventHandler(this.formaNpvToolStripMenuItem_Click);
-            // 
-            // formaNtToolStripMenuItem
-            // 
-            this.formaNtToolStripMenuItem.Name = "formaNtToolStripMenuItem";
-            this.formaNtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.formaNtToolStripMenuItem.Text = "Forma nt";
-            this.formaNtToolStripMenuItem.Click += new System.EventHandler(this.formaNtToolStripMenuItem_Click);
-            // 
-            // formaZvtToolStripMenuItem
-            // 
-            this.formaZvtToolStripMenuItem.Name = "formaZvtToolStripMenuItem";
-            this.formaZvtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.formaZvtToolStripMenuItem.Text = "Forma zvt";
-            this.formaZvtToolStripMenuItem.Click += new System.EventHandler(this.formaZvtToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,6 +183,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Генератор шаблонів";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

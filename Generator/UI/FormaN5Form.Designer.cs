@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaN5Form));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Id = new System.Windows.Forms.Label();
+            this.Input_9_рік = new System.Windows.Forms.TextBox();
+            this.Input_6_рік = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Input_42_члени_комісії_ініціали = new System.Windows.Forms.TextBox();
@@ -77,9 +80,6 @@
             this.Input_1_посада_роботодавця = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Input_6_рік = new System.Windows.Forms.TextBox();
-            this.Input_9_рік = new System.Windows.Forms.TextBox();
-            this.Id = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -143,6 +143,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(700, 2306);
             this.panel1.TabIndex = 0;
+            // 
+            // Id
+            // 
+            this.Id.AutoSize = true;
+            this.Id.Location = new System.Drawing.Point(41, 71);
+            this.Id.Name = "Id";
+            this.Id.Size = new System.Drawing.Size(0, 13);
+            this.Id.TabIndex = 49;
+            this.Id.Visible = false;
+            // 
+            // Input_9_рік
+            // 
+            this.Input_9_рік.Location = new System.Drawing.Point(311, 283);
+            this.Input_9_рік.Name = "Input_9_рік";
+            this.Input_9_рік.Size = new System.Drawing.Size(27, 20);
+            this.Input_9_рік.TabIndex = 48;
+            // 
+            // Input_6_рік
+            // 
+            this.Input_6_рік.Location = new System.Drawing.Point(623, 181);
+            this.Input_6_рік.Name = "Input_6_рік";
+            this.Input_6_рік.Size = new System.Drawing.Size(25, 20);
+            this.Input_6_рік.TabIndex = 47;
             // 
             // button2
             // 
@@ -497,39 +520,20 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(680, 21);
             this.comboBox1.TabIndex = 0;
-            // 
-            // Input_6_рік
-            // 
-            this.Input_6_рік.Location = new System.Drawing.Point(623, 181);
-            this.Input_6_рік.Name = "Input_6_рік";
-            this.Input_6_рік.Size = new System.Drawing.Size(25, 20);
-            this.Input_6_рік.TabIndex = 47;
-            // 
-            // Input_9_рік
-            // 
-            this.Input_9_рік.Location = new System.Drawing.Point(311, 283);
-            this.Input_9_рік.Name = "Input_9_рік";
-            this.Input_9_рік.Size = new System.Drawing.Size(27, 20);
-            this.Input_9_рік.TabIndex = 48;
-            // 
-            // Id
-            // 
-            this.Id.AutoSize = true;
-            this.Id.Location = new System.Drawing.Point(41, 71);
-            this.Id.Name = "Id";
-            this.Id.Size = new System.Drawing.Size(0, 13);
-            this.Id.TabIndex = 49;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // FormaN5Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(741, 721);
+            this.ClientSize = new System.Drawing.Size(758, 721);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormaN5Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormaN5";
+            this.Load += new System.EventHandler(this.FormaN5Form_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

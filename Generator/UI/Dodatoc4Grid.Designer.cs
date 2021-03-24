@@ -33,9 +33,7 @@
             this.generator2DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.advancedDataGridView1 = new Zuby.ADGV.AdvancedDataGridView();
             this.dodatoc4BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this._generator_2DataSet = new UI._generator_2DataSet();
             this.dodatoc4BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.dodatoc4TableAdapter = new UI._generator_2DataSetTableAdapters.Dodatoc4TableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.generator2DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._generator_2DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,18 +81,14 @@
             this.dodatoc4BindingSource1.DataMember = "Dodatoc4";
             // 
             // _generator_2DataSet
-            // 
-            this._generator_2DataSet.DataSetName = "_generator_2DataSet";
-            this._generator_2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //
             // 
             // dodatoc4BindingSource2
             // 
             this.dodatoc4BindingSource2.DataMember = "Dodatoc4";
-            this.dodatoc4BindingSource2.DataSource = this._generator_2DataSet;
             // 
             // dodatoc4TableAdapter
             // 
-            this.dodatoc4TableAdapter.ClearBeforeFill = true;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -183,7 +176,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.generator2DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._generator_2DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingSource2)).EndInit();
             this.ResumeLayout(false);
 
@@ -203,9 +195,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn typeInjuriesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn causesAccidentDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateAndSurnameDataGridViewTextBoxColumn;
-        private _generator_2DataSet _generator_2DataSet;
         private System.Windows.Forms.BindingSource dodatoc4BindingSource2;
-        private _generator_2DataSetTableAdapters.Dodatoc4TableAdapter dodatoc4TableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

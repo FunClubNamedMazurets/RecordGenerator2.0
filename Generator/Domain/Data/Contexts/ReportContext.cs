@@ -15,6 +15,8 @@ namespace Domain.Data.Contexts
         public DbSet<FormaNpv> FormaNpvs { get; set; }
         public DbSet<FormaNt> FormaNts { get; set; }
         public DbSet<FormaZvt> FormaZvts { get; set; }
+        public DbSet<DynamicTable> DynamicTables { get; set; }
+
 
         public ReportContext() : base("BaseConnection")
         {

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma7Form));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Id = new System.Windows.Forms.Label();
             this.Input_226_електронна_пошта = new System.Windows.Forms.TextBox();
             this.Input_226_факс = new System.Windows.Forms.TextBox();
             this.Input_225_телефон = new System.Windows.Forms.TextBox();
@@ -269,7 +270,6 @@
             this.Input_9_рік = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Id = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -526,6 +526,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(700, 3857);
             this.panel1.TabIndex = 0;
+            // 
+            // Id
+            // 
+            this.Id.AutoSize = true;
+            this.Id.Location = new System.Drawing.Point(32, 71);
+            this.Id.Name = "Id";
+            this.Id.Size = new System.Drawing.Size(0, 13);
+            this.Id.TabIndex = 240;
+            this.Id.Visible = false;
             // 
             // Input_226_електронна_пошта
             // 
@@ -2430,14 +2439,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(690, 21);
             this.comboBox1.TabIndex = 0;
-            // 
-            // Id
-            // 
-            this.Id.AutoSize = true;
-            this.Id.Location = new System.Drawing.Point(32, 71);
-            this.Id.Name = "Id";
-            this.Id.Size = new System.Drawing.Size(0, 13);
-            this.Id.TabIndex = 240;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Forma7Form
             // 
@@ -2448,7 +2450,9 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Forma7Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Forma7 tnv";
+            this.Load += new System.EventHandler(this.Forma7Form_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();

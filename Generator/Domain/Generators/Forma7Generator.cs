@@ -9,7 +9,7 @@ namespace Domain.Generators
 {
     public class Forma7Generator : BaseGenerator, IGenerator<Forma7>
     {
-        public Forma7Generator(bool hasGrid) : base(hasGrid)
+        public Forma7Generator(bool hasGrid = false) : base(hasGrid)
         {
             FilePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\forma-7-tnv.dotx";
         }

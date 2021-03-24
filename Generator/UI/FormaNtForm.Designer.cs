@@ -190,6 +190,7 @@
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(0, 13);
             this.Id.TabIndex = 68;
+            this.Id.Visible = false;
             // 
             // DynamicTable1
             // 
@@ -737,17 +738,20 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(681, 21);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // FormaNtForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(740, 687);
+            this.ClientSize = new System.Drawing.Size(757, 687);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormaNtForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormaNt";
+            this.Load += new System.EventHandler(this.FormaNtForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DynamicTable1)).EndInit();

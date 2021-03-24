@@ -83,6 +83,7 @@
     <Compile Include="Data\Entities\Dodatoc2.cs" />
     <Compile Include="Data\Entities\Dodatoc4.cs" />
     <Compile Include="Data\Entities\Dodatoc5.cs" />
+    <Compile Include="Data\Entities\DynamicTable.cs" />
     <Compile Include="Data\Entities\Forma7.cs" />
     <Compile Include="Data\Entities\FormaN1.cs" />
     <Compile Include="Data\Entities\FormaN5.cs" />
@@ -101,7 +102,15 @@
     <Compile Include="Generators\FormaNtGenerator.cs" />
     <Compile Include="Generators\FormaZvtGenerator.cs" />
     <Compile Include="Generators\IGenerator.cs" />
-    <Compile Include="Helpers\DynamicTable.cs" />
+    <Compile Include="Helpers\Constants.cs" />
+    <Compile Include="Migrations\202103211856092_Initial.cs" />
+    <Compile Include="Migrations\202103211856092_Initial.designer.cs">
+      <DependentUpon>202103211856092_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103232126092_addedcolumn.cs" />
+    <Compile Include="Migrations\202103232126092_addedcolumn.designer.cs">
+      <DependentUpon>202103232126092_addedcolumn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Dodatoc1Service.cs" />
@@ -130,7 +139,14 @@
     <None Include="Templates\forma-nt.dotx" />
     <None Include="Templates\forma-zvt-t-2-za-20.dotx" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202103211856092_Initial.resx">
+      <DependentUpon>202103211856092_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103232126092_addedcolumn.resx">
+      <DependentUpon>202103232126092_addedcolumn.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

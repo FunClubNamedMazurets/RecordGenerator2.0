@@ -9,7 +9,7 @@ namespace Domain.Generators
 {
     public class Dodatoc5Generator : BaseGenerator, IGenerator<Dodatoc5>
     {
-        public Dodatoc5Generator(bool hasGrid) : base(hasGrid)
+        public Dodatoc5Generator(bool hasGrid = false) : base(hasGrid)
         {
             FilePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\dodatok-5.dotx";
         }

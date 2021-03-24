@@ -1,6 +1,6 @@
-﻿using Domain.Helpers;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,8 +44,9 @@ namespace Domain.Data.Entities
         public string Input_33_Члени_Комісії_Посада { get; set; }
         public string Input_34_Голова_Комісії_Підпис { get; set; }
 
-
+        [NotMapped]
         public DynamicTable DynamicTable1 { get; set; }
+        [NotMapped]
         public DynamicTable DynamicTable2 { get; set; }
 
     }

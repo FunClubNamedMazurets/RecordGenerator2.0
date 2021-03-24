@@ -1,5 +1,4 @@
 ﻿using Domain.Data.Entities;
-using Domain.Helpers;
 using Microsoft.Office.Interop.Word;
 using System;
 using System.Collections.Generic;
@@ -59,7 +58,7 @@ namespace Domain.Generators
                     {
                         var dynamicTable = (DynamicTable)property.GetValue(model);
 
-                        for (int i = 0; i < dynamicTable.RowsCount-1; i++)
+                        for (int i = 0; i < dynamicTable.RowsCount; i++)
                         {
                             document.Tables[dynamicTable.TableTag].Rows.Add();
                         }

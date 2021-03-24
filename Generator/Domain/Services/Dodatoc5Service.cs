@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Domain.Data.Contexts;
+using Domain.Data.Entities;
+using System.Data.Entity;
 
 namespace Domain.Services
 {
@@ -17,7 +17,7 @@ namespace Domain.Services
 
         public Dodatoc5 GetById(int id)
         {
-            return _reportContext.Dodatoc5s.Where(x => x.Id == id).First();
+            return _reportContext.Dodatoc5s.Where(x => x.Id == id).FirstOrDefault();
         }
 
         public IList<Dodatoc5> GetAll()
@@ -33,7 +33,7 @@ namespace Domain.Services
 
         public void Update(Dodatoc5 entity)
         {
-            var dodatoc5 = _reportContext.Dodatoc5s.First(x => x.Id == entity.Id);
+            var dodatoc5 = _reportContext.Dodatoc5s.FirstOrDefault(x => x.Id == entity.Id);
             if (dodatoc5 != null)
             {
                 _reportContext.Entry(dodatoc5).CurrentValues.SetValues(entity);
@@ -44,7 +44,7 @@ namespace Domain.Services
 
         public void Delete(int id)
         {
-            var dodatoc5 = _reportContext.Dodatoc5s.First(x => x.Id == id);
+            var dodatoc5 = _reportContext.Dodatoc5s.FirstOrDefault(x => x.Id == id);
 
             if (dodatoc5 != null)
             {

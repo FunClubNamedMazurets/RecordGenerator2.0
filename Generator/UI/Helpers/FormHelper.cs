@@ -1,5 +1,4 @@
 ﻿using Domain.Data.Entities;
-using Domain.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +27,7 @@ namespace UI.Helpers
                 {
                     if (!string.IsNullOrEmpty(control.Text))
                     {
-                        piShared.SetValue(model, control.Text);
+                        piShared.SetValue(model, Convert.ToInt32(control.Text));
                     }
                 }
                 else if(property.PropertyType == typeof(DynamicTable))
@@ -36,15 +35,19 @@ namespace UI.Helpers
                     if (hasGrid)
                     {
                         var grid = (DataGridView)control;
-                        var table = new DynamicTable(grid.Rows.Count, grid.Columns.Count, Convert.ToInt32(grid.Tag));
+                        var table = new DynamicTable(grid.Rows.Count - 1, grid.Columns.Count, Convert.ToInt32(grid.Tag));
 
-                        for (int i = 0; i < grid.Rows.Count; i++)
+                        for (int i = 0; i < grid.Rows.Count - 1; i++)
                         {
                             for (int j = 0; j < grid.Columns.Count; j++)
                             {
                                 if (grid[j, i].Value != null)
                                 {
                                     table.Data[i, j] = grid[j, i].Value.ToString();
+                                }
+                                else
+                                {
+                                    table.Data[i, j] = Constants.Space;
                                 }
                             }
                         }

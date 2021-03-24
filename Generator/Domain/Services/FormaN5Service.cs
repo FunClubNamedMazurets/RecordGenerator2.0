@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Domain.Data.Contexts;
+using Domain.Data.Entities;
+using System.Data.Entity;
 
 namespace Domain.Services
 {
@@ -17,7 +17,7 @@ namespace Domain.Services
 
         public FormaN5 GetById(int id)
         {
-            return _reportContext.FormaN5s.Where(x => x.Id == id).First();
+            return _reportContext.FormaN5s.Where(x => x.Id == id).FirstOrDefault();
         }
 
         public IList<FormaN5> GetAll()
@@ -33,7 +33,7 @@ namespace Domain.Services
 
         public void Update(FormaN5 entity)
         {
-            var formaN5 = _reportContext.FormaN5s.First(x => x.Id == entity.Id);
+            var formaN5 = _reportContext.FormaN5s.FirstOrDefault(x => x.Id == entity.Id);
             if (formaN5 != null)
             {
                 _reportContext.Entry(formaN5).CurrentValues.SetValues(entity);
@@ -44,7 +44,7 @@ namespace Domain.Services
 
         public void Delete(int id)
         {
-            var formaN5 = _reportContext.FormaN5s.First(x => x.Id == id);
+            var formaN5 = _reportContext.FormaN5s.FirstOrDefault(x => x.Id == id);
 
             if (formaN5 != null)
             {

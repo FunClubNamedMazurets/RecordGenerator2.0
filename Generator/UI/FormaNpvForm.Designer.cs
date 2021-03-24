@@ -30,11 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaNpvForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Id = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Input_101_рік = new System.Windows.Forms.TextBox();
             this.Input_100_місяць = new System.Windows.Forms.TextBox();
             this.Input_99_число = new System.Windows.Forms.TextBox();
+            this.Input_98_члени_комісії_ініціали_прізвище = new System.Windows.Forms.TextBox();
+            this.Input_97_члени_комісії_підпис = new System.Windows.Forms.TextBox();
+            this.Input_96_члени_комісії_посада = new System.Windows.Forms.TextBox();
             this.Input_95_члени_комісії_ініціали_прізвище = new System.Windows.Forms.TextBox();
             this.Input_94_члени_комісії_підпис = new System.Windows.Forms.TextBox();
             this.Input_93_члени_комісії_посада = new System.Windows.Forms.TextBox();
@@ -141,10 +145,6 @@
             this.Input_1_посада_роботодавця = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Input_98_члени_комісії_ініціали_прізвище = new System.Windows.Forms.TextBox();
-            this.Input_97_члени_комісії_підпис = new System.Windows.Forms.TextBox();
-            this.Input_96_члени_комісії_посада = new System.Windows.Forms.TextBox();
-            this.Id = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -279,6 +279,15 @@
             this.panel1.Size = new System.Drawing.Size(726, 4006);
             this.panel1.TabIndex = 0;
             // 
+            // Id
+            // 
+            this.Id.AutoSize = true;
+            this.Id.Visible = false;
+            this.Id.Location = new System.Drawing.Point(32, 60);
+            this.Id.Name = "Id";
+            this.Id.Size = new System.Drawing.Size(0, 13);
+            this.Id.TabIndex = 119;
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(383, 3947);
@@ -319,6 +328,27 @@
             this.Input_99_число.Name = "Input_99_число";
             this.Input_99_число.Size = new System.Drawing.Size(38, 20);
             this.Input_99_число.TabIndex = 115;
+            // 
+            // Input_98_члени_комісії_ініціали_прізвище
+            // 
+            this.Input_98_члени_комісії_ініціали_прізвище.Location = new System.Drawing.Point(477, 3815);
+            this.Input_98_члени_комісії_ініціали_прізвище.Name = "Input_98_члени_комісії_ініціали_прізвище";
+            this.Input_98_члени_комісії_ініціали_прізвище.Size = new System.Drawing.Size(215, 20);
+            this.Input_98_члени_комісії_ініціали_прізвище.TabIndex = 114;
+            // 
+            // Input_97_члени_комісії_підпис
+            // 
+            this.Input_97_члени_комісії_підпис.Location = new System.Drawing.Point(351, 3815);
+            this.Input_97_члени_комісії_підпис.Name = "Input_97_члени_комісії_підпис";
+            this.Input_97_члени_комісії_підпис.Size = new System.Drawing.Size(117, 20);
+            this.Input_97_члени_комісії_підпис.TabIndex = 113;
+            // 
+            // Input_96_члени_комісії_посада
+            // 
+            this.Input_96_члени_комісії_посада.Location = new System.Drawing.Point(127, 3815);
+            this.Input_96_члени_комісії_посада.Name = "Input_96_члени_комісії_посада";
+            this.Input_96_члени_комісії_посада.Size = new System.Drawing.Size(215, 20);
+            this.Input_96_члени_комісії_посада.TabIndex = 112;
             // 
             // Input_95_члени_комісії_ініціали_прізвище
             // 
@@ -1120,46 +1150,20 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(705, 21);
             this.comboBox1.TabIndex = 0;
-            // 
-            // Input_98_члени_комісії_ініціали_прізвище
-            // 
-            this.Input_98_члени_комісії_ініціали_прізвище.Location = new System.Drawing.Point(477, 3815);
-            this.Input_98_члени_комісії_ініціали_прізвище.Name = "Input_98_члени_комісії_ініціали_прізвище";
-            this.Input_98_члени_комісії_ініціали_прізвище.Size = new System.Drawing.Size(215, 20);
-            this.Input_98_члени_комісії_ініціали_прізвище.TabIndex = 114;
-            // 
-            // Input_97_члени_комісії_підпис
-            // 
-            this.Input_97_члени_комісії_підпис.Location = new System.Drawing.Point(351, 3815);
-            this.Input_97_члени_комісії_підпис.Name = "Input_97_члени_комісії_підпис";
-            this.Input_97_члени_комісії_підпис.Size = new System.Drawing.Size(117, 20);
-            this.Input_97_члени_комісії_підпис.TabIndex = 113;
-            // 
-            // Input_96_члени_комісії_посада
-            // 
-            this.Input_96_члени_комісії_посада.Location = new System.Drawing.Point(127, 3815);
-            this.Input_96_члени_комісії_посада.Name = "Input_96_члени_комісії_посада";
-            this.Input_96_члени_комісії_посада.Size = new System.Drawing.Size(215, 20);
-            this.Input_96_члени_комісії_посада.TabIndex = 112;
-            // 
-            // Id
-            // 
-            this.Id.AutoSize = true;
-            this.Id.Location = new System.Drawing.Point(32, 60);
-            this.Id.Name = "Id";
-            this.Id.Size = new System.Drawing.Size(0, 13);
-            this.Id.TabIndex = 119;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // FormaNpvForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(767, 807);
+            this.ClientSize = new System.Drawing.Size(784, 807);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormaNpvForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Forma npv";
+            this.Load += new System.EventHandler(this.FormaNpvForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
