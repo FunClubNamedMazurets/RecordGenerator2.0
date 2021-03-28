@@ -18,7 +18,7 @@ namespace Domain.Data.Contexts
         public DbSet<DynamicTable> DynamicTables { get; set; }
 
 
-        public ReportContext() : base("BaseConnection")
+        public ReportContext() : base("UI.Properties.Settings.GeneratorConnectionString")
         {
 
         }

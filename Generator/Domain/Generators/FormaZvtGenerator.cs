@@ -11,7 +11,7 @@ namespace Domain.Generators
     {
         public FormaZvtGenerator(bool hasGrid) : base(hasGrid)
         {
-            FilePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\forma-zvt-t-2-za-20.dotx";
+            FilePath = Environment.CurrentDirectory + @"\Templates\forma-zvt-t-2-za-20.dotx";
         }
 
         public void Generate(FormaZvt model)

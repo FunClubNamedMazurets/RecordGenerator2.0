@@ -11,8 +11,9 @@ namespace Domain.Generators
     {
         public Forma7Generator(bool hasGrid = false) : base(hasGrid)
         {
-            FilePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\forma-7-tnv.dotx";
+            FilePath = Environment.CurrentDirectory + @"\Templates\forma-7-tnv.dotx";
         }
+
         public void Generate(Forma7 model)
         {
             // to do; add check on model props not null

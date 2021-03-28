@@ -11,7 +11,7 @@ namespace Domain.Generators
     {
         public Dodatoc1Generator(bool hasGrid = true) : base(hasGrid)
         {
-            FilePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\dodatok-1.dotx";
+            FilePath = Environment.CurrentDirectory + @"\Templates\dodatok-1.dotx";
         }
 
         public void Generate(Dodatoc1 model)

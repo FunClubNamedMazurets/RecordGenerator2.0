@@ -154,18 +154,15 @@
             this.panel1.Size = new System.Drawing.Size(637, 2096);
             this.panel1.TabIndex = 0;
             // 
-            // label1
-            // 
-            // 
             // Id
             // 
             this.Id.AutoSize = true;
-            this.Id.Visible = false;
             this.Id.Location = new System.Drawing.Point(553, 93);
             this.Id.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(0, 13);
             this.Id.TabIndex = 56;
+            this.Id.Visible = false;
             // 
             // Input_47_голова_комісії_п_і_б
             // 
@@ -582,7 +579,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(714, 821);
+            this.ClientSize = new System.Drawing.Size(666, 673);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Dodatoc5Form";

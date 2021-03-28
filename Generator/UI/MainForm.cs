@@ -92,5 +92,59 @@ namespace UI
             FormaZvtForm formaZvtForm = new FormaZvtForm();
             formaZvtForm.ShowDialog();
         }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Dodatoc1Grid dodatoc1Grid = new Dodatoc1Grid();
+            dodatoc1Grid.ShowDialog();
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            Dodatoc2Grid dodatoc2Grid = new Dodatoc2Grid();
+            dodatoc2Grid.ShowDialog();
+        }
+
+        private void dodatoc5ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Dodatoc5Grid dodatoc5Grid = new Dodatoc5Grid();
+            dodatoc5Grid.ShowDialog();
+        }
+
+        private void forma7TnvToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forma7Grid forma7Grid = new Forma7Grid();
+            forma7Grid.ShowDialog();
+        }
+
+        private void formaN1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormaN1Grid formaN1Grid = new FormaN1Grid();
+            formaN1Grid.ShowDialog();
+        }
+
+        private void formaN5ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormaN5Grid formaN5Grid = new FormaN5Grid();
+            formaN5Grid.ShowDialog();
+        }
+
+        private void formaNpvToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormaN1Grid formaN1Grid = new FormaN1Grid();
+            formaN1Grid.ShowDialog();
+        }
+
+        private void formaNtToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormaNtGrid formaNtGrid = new FormaNtGrid();
+            formaNtGrid.ShowDialog();
+        }
+
+        private void formaZvtToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormaZvtGrid formaZvtGrid = new FormaZvtGrid();
+            formaZvtGrid.ShowDialog();
+        }
     }
 }

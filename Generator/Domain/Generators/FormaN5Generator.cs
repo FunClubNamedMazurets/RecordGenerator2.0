@@ -11,7 +11,7 @@ namespace Domain.Generators
     {
         public FormaN5Generator(bool hasGrid) : base(hasGrid)
         {
-            FilePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\forma-n-5.dotx";
+            FilePath = Environment.CurrentDirectory + @"\Templates\forma-n-5.dotx";
         }
         public void Generate(FormaN5 model)
         {

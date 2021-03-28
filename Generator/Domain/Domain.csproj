@@ -103,16 +103,12 @@
     <Compile Include="Generators\FormaZvtGenerator.cs" />
     <Compile Include="Generators\IGenerator.cs" />
     <Compile Include="Helpers\Constants.cs" />
-    <Compile Include="Migrations\202103211856092_Initial.cs" />
-    <Compile Include="Migrations\202103211856092_Initial.designer.cs">
-      <DependentUpon>202103211856092_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103232126092_addedcolumn.cs" />
-    <Compile Include="Migrations\202103232126092_addedcolumn.designer.cs">
-      <DependentUpon>202103232126092_addedcolumn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Services\Dodatoc1Service.cs" />
     <Compile Include="Services\Dodatoc2Service.cs" />
     <Compile Include="Services\Dodatoc4Service.cs" />
@@ -128,6 +124,10 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Templates\dodatok-1.dotx" />
     <None Include="Templates\dodatok-2.dotx" />
     <None Include="Templates\dodatok-4.dotx" />
@@ -138,14 +138,6 @@
     <None Include="Templates\forma-npv.dotx" />
     <None Include="Templates\forma-nt.dotx" />
     <None Include="Templates\forma-zvt-t-2-za-20.dotx" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202103211856092_Initial.resx">
-      <DependentUpon>202103211856092_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103232126092_addedcolumn.resx">
-      <DependentUpon>202103232126092_addedcolumn.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

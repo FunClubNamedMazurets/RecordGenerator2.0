@@ -29,163 +29,314 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dodatoc4Grid));
+            this.generatorDataSet = new UI.GeneratorDataSet();
             this.dodatoc4BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.generator2DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.advancedDataGridView1 = new Zuby.ADGV.AdvancedDataGridView();
-            this.dodatoc4BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dodatoc4BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dodatoc4TableAdapter = new UI.GeneratorDataSetTableAdapters.Dodatoc4TableAdapter();
+            this.tableAdapterManager = new UI.GeneratorDataSetTableAdapters.TableAdapterManager();
+            this.dodatoc4BindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.dodatoc4BindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.dodatoc4AdvancedDataGridView = new Zuby.ADGV.AdvancedDataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.generatorDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.generator2DataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingNavigator)).BeginInit();
+            this.dodatoc4BindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dodatoc4AdvancedDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // generatorDataSet
+            // 
+            this.generatorDataSet.DataSetName = "GeneratorDataSet";
+            this.generatorDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dodatoc4BindingSource
             // 
             this.dodatoc4BindingSource.DataMember = "Dodatoc4";
-            // 
-            // advancedDataGridView1
-            // 
-            this.advancedDataGridView1.AutoGenerateColumns = false;
-            this.advancedDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.advancedDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.advancedDataGridView1.DataSource = this.dodatoc4BindingSource2;
-            this.advancedDataGridView1.FilterAndSortEnabled = true;
-            this.advancedDataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.advancedDataGridView1.Name = "advancedDataGridView1";
-            this.advancedDataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.advancedDataGridView1.Size = new System.Drawing.Size(943, 426);
-            this.advancedDataGridView1.TabIndex = 0;
-            // 
-            // dodatoc4BindingSource1
-            // 
-            this.dodatoc4BindingSource1.DataMember = "Dodatoc4";
-            // 
-            // _generator_2DataSet
-            //
-            // 
-            // dodatoc4BindingSource2
-            // 
-            this.dodatoc4BindingSource2.DataMember = "Dodatoc4";
+            this.dodatoc4BindingSource.DataSource = this.generatorDataSet;
             // 
             // dodatoc4TableAdapter
             // 
+            this.dodatoc4TableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn1
+            // tableAdapterManager
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Dodatoc1TableAdapter = null;
+            this.tableAdapterManager.Dodatoc2TableAdapter = null;
+            this.tableAdapterManager.Dodatoc4TableAdapter = this.dodatoc4TableAdapter;
+            this.tableAdapterManager.Dodatoc5TableAdapter = null;
+            this.tableAdapterManager.DynamicTablesTableAdapter = null;
+            this.tableAdapterManager.Forma7TableAdapter = null;
+            this.tableAdapterManager.FormaN1TableAdapter = null;
+            this.tableAdapterManager.FormaN5TableAdapter = null;
+            this.tableAdapterManager.FormaNpvsTableAdapter = null;
+            this.tableAdapterManager.FormaNtsTableAdapter = null;
+            this.tableAdapterManager.FormaZvtsTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = UI.GeneratorDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // dataGridViewTextBoxColumn2
+            // dodatoc4BindingNavigator
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NameOfOrganAndAddress";
-            this.dataGridViewTextBoxColumn2.HeaderText = "NameOfOrganAndAddress";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dodatoc4BindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.dodatoc4BindingNavigator.BindingSource = this.dodatoc4BindingSource;
+            this.dodatoc4BindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.dodatoc4BindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.dodatoc4BindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.dodatoc4BindingNavigatorSaveItem});
+            this.dodatoc4BindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.dodatoc4BindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.dodatoc4BindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.dodatoc4BindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.dodatoc4BindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.dodatoc4BindingNavigator.Name = "dodatoc4BindingNavigator";
+            this.dodatoc4BindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.dodatoc4BindingNavigator.Size = new System.Drawing.Size(984, 25);
+            this.dodatoc4BindingNavigator.TabIndex = 0;
+            this.dodatoc4BindingNavigator.Text = "bindingNavigator1";
             // 
-            // dataGridViewTextBoxColumn3
+            // bindingNavigatorAddNewItem
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "DateAndTime";
-            this.dataGridViewTextBoxColumn3.HeaderText = "DateAndTime";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
-            // dataGridViewTextBoxColumn4
+            // bindingNavigatorCountItem
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "NameOfOrganAndOwner";
-            this.dataGridViewTextBoxColumn4.HeaderText = "NameOfOrganAndOwner";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
-            // dataGridViewTextBoxColumn5
+            // bindingNavigatorDeleteItem
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Place";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Place";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
-            // dataGridViewTextBoxColumn6
+            // bindingNavigatorMoveFirstItem
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Initials";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Initials";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
             // 
-            // dataGridViewTextBoxColumn7
+            // bindingNavigatorMovePreviousItem
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "TypeInjuries";
-            this.dataGridViewTextBoxColumn7.HeaderText = "TypeInjuries";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
-            // dataGridViewTextBoxColumn8
+            // bindingNavigatorSeparator
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "CausesAccident";
-            this.dataGridViewTextBoxColumn8.HeaderText = "CausesAccident";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
             // 
-            // dataGridViewTextBoxColumn9
+            // bindingNavigatorPositionItem
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "DateAndSurname";
-            this.dataGridViewTextBoxColumn9.HeaderText = "DateAndSurname";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // dodatoc4BindingNavigatorSaveItem
+            // 
+            this.dodatoc4BindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.dodatoc4BindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("dodatoc4BindingNavigatorSaveItem.Image")));
+            this.dodatoc4BindingNavigatorSaveItem.Name = "dodatoc4BindingNavigatorSaveItem";
+            this.dodatoc4BindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.dodatoc4BindingNavigatorSaveItem.Text = "Сохранить данные";
+            this.dodatoc4BindingNavigatorSaveItem.Click += new System.EventHandler(this.dodatoc4BindingNavigatorSaveItem_Click);
+            // 
+            // dodatoc4AdvancedDataGridView
+            // 
+            this.dodatoc4AdvancedDataGridView.AutoGenerateColumns = false;
+            this.dodatoc4AdvancedDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dodatoc4AdvancedDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18});
+            this.dodatoc4AdvancedDataGridView.DataSource = this.dodatoc4BindingSource;
+            this.dodatoc4AdvancedDataGridView.FilterAndSortEnabled = true;
+            this.dodatoc4AdvancedDataGridView.Location = new System.Drawing.Point(12, 28);
+            this.dodatoc4AdvancedDataGridView.Name = "dodatoc4AdvancedDataGridView";
+            this.dodatoc4AdvancedDataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dodatoc4AdvancedDataGridView.Size = new System.Drawing.Size(960, 521);
+            this.dodatoc4AdvancedDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Input_1_орган_управління_освітою";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Input_1_орган_управління_освітою";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Input_2_дата_час_нещасності";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Input_2_дата_час_нещасності";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Input_3_назва_навчального_закладу";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Input_3_назва_навчального_закладу";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Input_4_місце_нещасності";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Input_4_місце_нещасності";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Input_5_дані_потерпілих";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Input_5_дані_потерпілих";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Input_6_характер_травм";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Input_6_характер_травм";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Input_7_обставини_нещасності";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Input_7_обставини_нещасності";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "Input_8_дата_передачі_інформації";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Input_8_дата_передачі_інформації";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
             // 
             // Dodatoc4Grid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 450);
-            this.Controls.Add(this.advancedDataGridView1);
+            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.dodatoc4AdvancedDataGridView);
+            this.Controls.Add(this.dodatoc4BindingNavigator);
             this.Name = "Dodatoc4Grid";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodatoc4Grid";
             this.Load += new System.EventHandler(this.Dodatoc4Grid_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.generatorDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.generator2DataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dodatoc4BindingNavigator)).EndInit();
+            this.dodatoc4BindingNavigator.ResumeLayout(false);
+            this.dodatoc4BindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dodatoc4AdvancedDataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.BindingSource generator2DataSetBindingSource;
-        private System.Windows.Forms.BindingSource dodatoc4BindingSource;
-        private Zuby.ADGV.AdvancedDataGridView advancedDataGridView1;
-        private System.Windows.Forms.BindingSource dodatoc4BindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameOfOrganAndAddressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateAndTimeDataGridViewTextBoxColumn;
@@ -195,7 +346,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn typeInjuriesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn causesAccidentDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateAndSurnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource dodatoc4BindingSource2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -205,5 +355,32 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private GeneratorDataSet generatorDataSet;
+        private System.Windows.Forms.BindingSource dodatoc4BindingSource;
+        private GeneratorDataSetTableAdapters.Dodatoc4TableAdapter dodatoc4TableAdapter;
+        private GeneratorDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator dodatoc4BindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton dodatoc4BindingNavigatorSaveItem;
+        private Zuby.ADGV.AdvancedDataGridView dodatoc4AdvancedDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
     }
 }

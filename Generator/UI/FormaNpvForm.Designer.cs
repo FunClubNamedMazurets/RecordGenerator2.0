@@ -282,11 +282,11 @@
             // Id
             // 
             this.Id.AutoSize = true;
-            this.Id.Visible = false;
             this.Id.Location = new System.Drawing.Point(32, 60);
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(0, 13);
             this.Id.TabIndex = 119;
+            this.Id.Visible = false;
             // 
             // button2
             // 
@@ -1157,7 +1157,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(784, 807);
+            this.ClientSize = new System.Drawing.Size(755, 673);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormaNpvForm";

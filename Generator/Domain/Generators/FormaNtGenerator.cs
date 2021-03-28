@@ -11,7 +11,7 @@ namespace Domain.Generators
     {
         public FormaNtGenerator(bool hasGrid = true) : base(hasGrid)
         {
-            FilePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\forma-nt.dotx";
+            FilePath = Environment.CurrentDirectory + @"\Templates\forma-nt.dotx";
         }
         public void Generate(FormaNt model)
         {

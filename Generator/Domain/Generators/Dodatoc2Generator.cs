@@ -9,7 +9,7 @@ namespace Domain.Generators
     {
         public Dodatoc2Generator(bool hasGrid = true) : base(hasGrid)
         {
-            FilePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\dodatok-2.dotx";
+            FilePath = Environment.CurrentDirectory + @"\Templates\dodatok-2.dotx";
         }
 
         public void Generate(Dodatoc2 model)

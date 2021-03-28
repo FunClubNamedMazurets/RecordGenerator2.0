@@ -11,7 +11,7 @@ namespace Domain.Generators
     {
         public FormaNpvGenerator(bool hasGrid) : base(hasGrid)
         {
-            FilePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\forma-npv.dotx";
+            FilePath = Environment.CurrentDirectory + @"\Templates\forma-npv.dotx";
         }
         public void Generate(FormaNpv model)
         {

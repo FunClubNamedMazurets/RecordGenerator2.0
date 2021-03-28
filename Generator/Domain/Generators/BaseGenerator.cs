@@ -87,11 +87,17 @@ namespace Domain.Generators
 
         public void CloseDocument()
         {
-            document.SaveAs2();
-            document.Close();
-            application.Quit();
-            document = null;
-            application = null;
+            //if (document != null)
+            //{
+            //    //document.Close();
+            //    document = null;
+            //}
+
+            //if (application != null)
+            //{
+            //    application.Quit();
+            //    application = null;
+            //}
         }
     }
 }

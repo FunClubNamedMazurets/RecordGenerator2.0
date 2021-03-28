@@ -32,6 +32,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Id = new System.Windows.Forms.Label();
             this.Input_8_дата_передачі_інформації = new System.Windows.Forms.TextBox();
             this.Input_7_обставини_нещасності = new System.Windows.Forms.TextBox();
             this.Input_6_характер_травм = new System.Windows.Forms.TextBox();
@@ -44,7 +45,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(642, 653);
             this.panel1.TabIndex = 10;
+            // 
+            // Id
+            // 
+            this.Id.AutoSize = true;
+            this.Id.Location = new System.Drawing.Point(629, 25);
+            this.Id.Name = "Id";
+            this.Id.Size = new System.Drawing.Size(0, 13);
+            this.Id.TabIndex = 15;
+            this.Id.Visible = false;
             // 
             // Input_8_дата_передачі_інформації
             // 
@@ -185,15 +194,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Id
-            // 
-            this.Id.AutoSize = true;
-            this.Id.Location = new System.Drawing.Point(629, 25);
-            this.Id.Name = "Id";
-            this.Id.Size = new System.Drawing.Size(0, 13);
-            this.Id.TabIndex = 15;
-            this.Id.Visible = false;
-            // 
             // Dodatoc4Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,6 +205,7 @@
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Dodatoc4Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodatoc4";
             this.Load += new System.EventHandler(this.Dodatoc4Form_Load);
             this.panel1.ResumeLayout(false);

@@ -79,7 +79,7 @@ namespace UI
                 {
                     PropertyInfo piShared = type.GetProperty(property.Name);
                     var control = this.Controls.Find(property.Name, true).FirstOrDefault();
-                    control.Text = property.GetValue(dodatoc4).ToString();
+                    control.Text = property.GetValue(dodatoc4)?.ToString();
                 }
             }
             else

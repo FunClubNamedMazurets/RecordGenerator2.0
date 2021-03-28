@@ -79,7 +79,7 @@ namespace UI
                     {
                         PropertyInfo piShared = type.GetProperty(property.Name);
                         var control = this.Controls.Find(property.Name, true).FirstOrDefault();
-                        control.Text = property.GetValue(formaN1).ToString();
+                        control.Text = property.GetValue(formaN1)?.ToString();
                     }
                     else
                     {
@@ -167,6 +167,6 @@ namespace UI
             }
         }
 
-        #endregion      
+        #endregion
     }
 }
