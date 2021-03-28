@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dodatoc2Form));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Id = new System.Windows.Forms.Label();
             this.DynamicTable1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,7 +52,6 @@
             this.Input_1_орган_управління_освітою = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Id = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DynamicTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,6 +83,15 @@
             this.panel1.Size = new System.Drawing.Size(650, 664);
             this.panel1.TabIndex = 0;
             // 
+            // Id
+            // 
+            this.Id.AutoSize = true;
+            this.Id.Location = new System.Drawing.Point(626, 27);
+            this.Id.Name = "Id";
+            this.Id.Size = new System.Drawing.Size(0, 13);
+            this.Id.TabIndex = 18;
+            this.Id.Visible = false;
+            // 
             // DynamicTable1
             // 
             this.DynamicTable1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -92,25 +101,31 @@
             this.Column3});
             this.DynamicTable1.Location = new System.Drawing.Point(13, 413);
             this.DynamicTable1.Name = "DynamicTable1";
+            this.DynamicTable1.RowHeadersWidth = 51;
             this.DynamicTable1.Size = new System.Drawing.Size(613, 123);
             this.DynamicTable1.TabIndex = 17;
+            this.DynamicTable1.Tag = "3";
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Діагноз за довідкою лікувально- профілактичного закладу";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.Width = 280;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Звільнений від  навчання (відвідування) у         навчальному  закладі";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.Width = 180;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Число  днів невідвідування навчального закладу";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
             // 
             // button2
             // 
@@ -239,23 +254,17 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(633, 21);
             this.comboBox1.TabIndex = 0;
-            // 
-            // Id
-            // 
-            this.Id.AutoSize = true;
-            this.Id.Location = new System.Drawing.Point(626, 27);
-            this.Id.Name = "Id";
-            this.Id.Size = new System.Drawing.Size(0, 13);
-            this.Id.TabIndex = 18;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Dodatoc2Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 688);
+            this.ClientSize = new System.Drawing.Size(666, 673);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Dodatoc2Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodatoc2";
             this.Load += new System.EventHandler(this.Dodatoc2Form_Load);
             this.panel1.ResumeLayout(false);

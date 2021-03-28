@@ -83,6 +83,7 @@
     <Compile Include="Data\Entities\Dodatoc2.cs" />
     <Compile Include="Data\Entities\Dodatoc4.cs" />
     <Compile Include="Data\Entities\Dodatoc5.cs" />
+    <Compile Include="Data\Entities\DynamicTable.cs" />
     <Compile Include="Data\Entities\Forma7.cs" />
     <Compile Include="Data\Entities\FormaN1.cs" />
     <Compile Include="Data\Entities\FormaN5.cs" />
@@ -101,9 +102,13 @@
     <Compile Include="Generators\FormaNtGenerator.cs" />
     <Compile Include="Generators\FormaZvtGenerator.cs" />
     <Compile Include="Generators\IGenerator.cs" />
-    <Compile Include="Helpers\DynamicTable.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Helpers\Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Services\Dodatoc1Service.cs" />
     <Compile Include="Services\Dodatoc2Service.cs" />
     <Compile Include="Services\Dodatoc4Service.cs" />
@@ -119,6 +124,10 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Templates\dodatok-1.dotx" />
     <None Include="Templates\dodatok-2.dotx" />
     <None Include="Templates\dodatok-4.dotx" />
@@ -130,7 +139,6 @@
     <None Include="Templates\forma-nt.dotx" />
     <None Include="Templates\forma-zvt-t-2-za-20.dotx" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -14,7 +14,7 @@ namespace Domain.Generators
     {      
         public Dodatoc4Generator(bool hasGrid = false) : base(hasGrid)
         {
-            FilePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 12) + @"Domain\Templates\Dodatok-4.dotx";
+            FilePath = Environment.CurrentDirectory + @"\Templates\Dodatok-4.dotx";
         }
 
         public void Generate(Dodatoc4 model)

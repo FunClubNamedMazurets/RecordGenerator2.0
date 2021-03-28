@@ -16,5 +16,20 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void forma7BindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.forma7BindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.generatorDataSet);
+
+        }
+
+        private void Forma7Grid_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "generatorDataSet.Forma7". При необходимости она может быть перемещена или удалена.
+            this.forma7TableAdapter.Fill(this.generatorDataSet.Forma7);
+
+        }
     }
 }

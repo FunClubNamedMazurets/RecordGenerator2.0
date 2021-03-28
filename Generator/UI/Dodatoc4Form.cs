@@ -28,7 +28,7 @@ namespace UI
 
         private void Dodatoc4Form_Load(object sender, EventArgs e)
         {
-            //LoadComboBox();
+            LoadComboBox();
         }
 
         //save form to db
@@ -39,13 +39,13 @@ namespace UI
             if (string.IsNullOrEmpty(Id.Text) || Id.Text == "0")
             {
                 _dodatoc4Service.Insert(dodatoc4Model);
-                Id.Text = dodatoc4Model?.Id.ToString();
-                //LoadComboBox(selectedCurrent: true);                                             
+                Id.Text = dodatoc4Model?.Id.ToString();           
+                LoadComboBox(selectedLast: true);
             }
             else 
             { 
-                _dodatoc4Service.Update(dodatoc4Model);             
-                //LoadComboBox(selectedLast: true);              
+                _dodatoc4Service.Update(dodatoc4Model);
+                LoadComboBox(selectedCurrent: true);
             }
         }
 
@@ -58,17 +58,31 @@ namespace UI
       
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //var item = (KeyValuePair<int, string>)comboBox1.SelectedItem;
-            //var dodatoc4 = _dodatoc4Service.GetById(item.Key);
+            var item = (KeyValuePair<int, string>)comboBox1.SelectedItem;
+            var dodatoc4 = _dodatoc4Service.GetById(item.Key);
 
-            //Type type = dodatoc4.GetType();
+            if (dodatoc4 != null)
+            {
+                Type type = dodatoc4.GetType();
 
-            //foreach (var property in type.GetProperties().OrderBy(x => x.Name))
-            //{              
-            //    PropertyInfo piShared = type.GetProperty(property.Name);
-            //    var control = this.Controls.Find(property.Name, true).FirstOrDefault();
-            //    control.Text = property.GetValue(dodatoc4).ToString();
-            //}
+                foreach (var property in type.GetProperties().OrderBy(x => x.Name))
+                {
+                    PropertyInfo piShared = type.GetProperty(property.Name);
+                    var control = this.Controls.Find(property.Name, true).FirstOrDefault();
+                    control.Text = property.GetValue(dodatoc4)?.ToString();
+                }
+            }
+            else
+            {
+                Type type = typeof(Dodatoc4);
+
+                foreach (var property in type.GetProperties().OrderBy(x => x.Name))
+                {
+                    PropertyInfo piShared = type.GetProperty(property.Name);
+                    var control = this.Controls.Find(property.Name, true).FirstOrDefault();
+                    control.Text = "";
+                }
+            }
         }
 
         private void LoadComboBox(bool selectedLast = false, bool selectedCurrent = false) 

@@ -1,12 +1,56 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Domain.Data.Contexts;
+using Domain.Data.Entities;
+using System.Data.Entity;
 
 namespace Domain.Services
 {
-    class FormaN5Service
+    public class FormaN5Service : IBaseService<FormaN5>
     {
+        private ReportContext _reportContext;
+
+        public FormaN5Service()
+        {
+            _reportContext = new ReportContext();
+        }
+
+        public FormaN5 GetById(int id)
+        {
+            return _reportContext.FormaN5s.Where(x => x.Id == id).FirstOrDefault();
+        }
+
+        public IList<FormaN5> GetAll()
+        {
+            return _reportContext.FormaN5s.ToList();
+        }
+
+        public void Insert(FormaN5 entity)
+        {
+            _reportContext.FormaN5s.Add(entity);
+            _reportContext.SaveChanges();
+        }
+
+        public void Update(FormaN5 entity)
+        {
+            var formaN5 = _reportContext.FormaN5s.FirstOrDefault(x => x.Id == entity.Id);
+            if (formaN5 != null)
+            {
+                _reportContext.Entry(formaN5).CurrentValues.SetValues(entity);
+                _reportContext.Entry(formaN5).State = EntityState.Modified;
+                _reportContext.SaveChanges();
+            }
+        }
+
+        public void Delete(int id)
+        {
+            var formaN5 = _reportContext.FormaN5s.FirstOrDefault(x => x.Id == id);
+
+            if (formaN5 != null)
+            {
+                _reportContext.FormaN5s.Remove(formaN5);
+                _reportContext.SaveChanges();
+            }
+        }
     }
 }

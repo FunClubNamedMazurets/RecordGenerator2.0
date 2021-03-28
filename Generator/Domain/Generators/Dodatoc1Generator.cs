@@ -9,14 +9,15 @@ namespace Domain.Generators
 {
     public class Dodatoc1Generator : BaseGenerator, IGenerator<Dodatoc1>
     {
-        public Dodatoc1Generator(bool hasGrid) : base(hasGrid)
+        public Dodatoc1Generator(bool hasGrid = true) : base(hasGrid)
         {
-            FilePath = "";
+            FilePath = Environment.CurrentDirectory + @"\Templates\dodatok-1.dotx";
         }
 
         public void Generate(Dodatoc1 model)
         {
-            throw new NotImplementedException();
+            ReadDocument();
+            SetInputs(model);
         }
     }
 }

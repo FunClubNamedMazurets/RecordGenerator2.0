@@ -15,6 +15,21 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -180,6 +195,12 @@
     <Compile Include="FormaZvtGrid.Designer.cs">
       <DependentUpon>FormaZvtGrid.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneratorDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneratorDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Constants.cs" />
     <Compile Include="Helpers\FormHelper.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -189,13 +210,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="_generator_2DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_generator_2DataSet.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Dodatoc1Form.resx">
       <DependentUpon>Dodatoc1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodatoc1Grid.resx">
+      <DependentUpon>Dodatoc1Grid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dodatoc2Form.resx">
       <DependentUpon>Dodatoc2Form.cs</DependentUpon>
@@ -212,23 +231,44 @@
     <EmbeddedResource Include="Dodatoc5Form.resx">
       <DependentUpon>Dodatoc5Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dodatoc5Grid.resx">
+      <DependentUpon>Dodatoc5Grid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forma7Form.resx">
       <DependentUpon>Forma7Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma7Grid.resx">
+      <DependentUpon>Forma7Grid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaN1Form.resx">
       <DependentUpon>FormaN1Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormaN1Grid.resx">
+      <DependentUpon>FormaN1Grid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormaN5Form.resx">
       <DependentUpon>FormaN5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaN5Grid.resx">
+      <DependentUpon>FormaN5Grid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaNpvForm.resx">
       <DependentUpon>FormaNpvForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormaNpvGrid.resx">
+      <DependentUpon>FormaNpvGrid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormaNtForm.resx">
       <DependentUpon>FormaNtForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormaNtGrid.resx">
+      <DependentUpon>FormaNtGrid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormaZvtForm.resx">
       <DependentUpon>FormaZvtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZvtGrid.resx">
+      <DependentUpon>FormaZvtGrid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -242,6 +282,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="GeneratorDataSet.xsc">
+      <DependentUpon>GeneratorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GeneratorDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GeneratorDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GeneratorDataSet.xss">
+      <DependentUpon>GeneratorDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -252,17 +303,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="_generator_2DataSet.xsc">
-      <DependentUpon>_generator_2DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="_generator_2DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_generator_2DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_generator_2DataSet.xss">
-      <DependentUpon>_generator_2DataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -272,6 +312,27 @@
       <Project>{49C33400-B00A-4E60-95B7-C971690AA0D7}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Generator.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Generator_log.ldf">
+      <DependentUpon>Generator.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
